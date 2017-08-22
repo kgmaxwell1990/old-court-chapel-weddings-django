@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+
+<div class="header header1">
+        <div class="brand">Old Court Chapel <br> Weddings</div>
+        <div class="address-bar">Strangford</br> County Down</br> Northern Ireland</div>
+      </div>
+      
+      <hr class="style14">
+      
+      <div class="container-fluid">    
+          <div class="row">
+            <div class="col-sm-12 intro">
+              <p class="raleway"><span class="greatvibes caps pink">O</span>
+                ld <span class="greatvibes caps pink">C</span>ourt is a 
+                unique location for your whole wedding day.  
+                <span class="greatvibes caps pink">S</span>et on the shores 
+                of <span class="greatvibes caps pink">S</span>trangford 
+                <span class="greatvibes caps pink">L</span>ough in a 
+                private estate with a 17th century 
+                <span class="greatvibes caps pink">C</span>hurch, restored 
+                stables, a yurt-inspired <span class="greatvibes caps pink">M</span>
+                arquee and several acres of natural gardens sweeping down to the 
+                <span class="greatvibes caps pink">L</span>ough Shore.</p>
+               <div class="imagesacross"> 
+                <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/>
+                <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/>
+                <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/>
+                <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/>
+               </div>
+              <p class="raleway"><span class="greatvibes caps pink">T</span>
+                he opportunities for fabulous photos are quite breathtaking.  
+                <span class="greatvibes caps pink">A</span>s we only have 
+                <span class="greatvibes caps pink">O</span>ne wedding per week, 
+                the venue will be <span class="greatvibes caps pink">E</span>xclusively 
+                yours, with the opportunity to <span class="greatvibes caps pink">C</span>
+                ustomise the space prior to the big day, if you so wish, so that you can 
+                feel completely <span class="greatvibes caps pink">R</span>elaxed, 
+                with everything as you would like it, ready to enjoy a 
+                <span class="greatvibes caps pink">M</span>emorable day and evening.</p>
+            </div>
+          </div> 
+      
+          <hr class="style14">
+      
+          <div class="row cards">
+      
+            <div class="col-lg-6 col-md-6 col-sm-12 card">
+              <a href="{% url 'gallery' %}">
+              <img src="{% static 'images/marquee8.jpg' %}" width="100%"/>
+              <div class="description">
+              <h3 class="description_content hvr-grow">Check out our Gallery </h3>
+              </div>
+              </a>
+            </div>
+      
+            <div class="col-lg-6 col-md-6 col-sm-12 card">
+              <a href="{% url 'booking' %}">
+              <img src="{% static 'images/insidechapel8.jpg' %}" width="100%"/>
+              <div class="description">
+              <h3 class="description_content hvr-grow">Booking & Info</h3>
+              </div>
+              </a>
+            </div>
+      
+          </div>
+      
+          <div class="row cards">
+      
+            <div class="col-lg-6 col-md-6 col-sm-12 card">
+              <a href="{% url 'vendors' %}">
+              <img src="{% static 'images/garden19.jpg' %}" width="100%"/>
+              <div class="description">
+              <h3 class="description_content hvr-grow"> Suggestions of Vendors </h3>
+              </div>
+              </a>
+            </div>
+      
+            <div class="col-lg-6 col-md-6 col-sm-12 card">
+              <a href="/">
+              <img src="{% static 'images/marquee3.jpg' %}" width="100%"/>
+              <div class="description">
+              <h3 class="description_content hvr-grow">Get In Touch </h3>
+              </div>
+              </a>
+            </div>
+      
+          </div>
+      </div>
+
+
+{% endblock content %}

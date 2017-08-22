@@ -1,0 +1,115 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Old Court Chapel Weddings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--reset link-->
+	<link rel="stylesheet" type="text/css" href="{% static "reset.css" %}">
+
+  <!--link to bootstrap -->
+	<link rel="stylesheet" type="text/css" href="{% static "lib/css/bootstrap.css" %}">
+
+  <!--link to css-->
+  <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+
+	<!--Custom fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Tangerine|Lato|Philosopher|Great+Vibes" rel="stylesheet">
+
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+  <link rel="icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+
+  <!--FancyBox CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static 'lib/css/jquery.fancybox.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'index' %}">Old Court Chapel Weddings</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li><a href="{% url 'index' %}" class="hvr-grow">Home</a></li>
+              <li><a href="{% url 'gallery' %}" class="hvr-grow">Gallery</a></li>
+              <li><a href="{% url 'booking' %}" class="hvr-grow">Booking &amp; Info</a></li>
+              <li><a href="{% url 'vendors' %}" class="hvr-grow">Vendors</a></li>
+              <li><a href="/" class="hvr-grow">Contact Us</a></li>
+          </ul>
+
+
+      </div>
+</nav>
+
+<div class="pushdown">
+        {% if messages %}
+            <div class="alert alert-success">
+                <div class="messages">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+
+
+{% block content %}
+{% endblock content %}
+
+
+
+<footer id="footer">
+    <hr class="style14 longer">
+    <div class="col-sm-4"> 
+    <h3> Connect </h3>
+    <p> (+44)2844881318 / (+44)7783345130 </br> oldcourtchapelweddings@gmail.com</p>
+    <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
+    <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
+    <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
+</div>
+<div class="col-sm-4">
+    <h3> Where We Are </h3>
+    <p> Old Court Chapel Weddings </br> 60 Old Court </br> Strangford </br> Co. Down </br> Northern Ireland </br> BT30 7NB 
+    </p>    
+</div> 
+
+<div class="col-sm-4">
+    <h3> Website Info </h3>
+    <p>Website Designed by Katie Maxwell</p>
+    <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="30px"/></a>
+    <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="30px"/></a>
+    <p>Copyright © 2017</p>
+</div>
+
+</footer>
+
+    
+
+
+<!--links to javascript and jquery-->
+  <script type="text/javascript" src="{% static 'lib/js/jquery-3.2.1.js' %}"></script>
+  <script type="text/javascript" src="{% static 'lib/js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="{% static 'lib/js/jquery.fancybox.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+
+</html>
