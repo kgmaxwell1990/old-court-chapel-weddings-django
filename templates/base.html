@@ -47,7 +47,19 @@
           <ul class="nav navbar-nav">
               <li><a href="{% url 'index' %}" class="hvr-grow">Home</a></li>
               <li><a href="{% url 'gallery' %}" class="hvr-grow">Gallery</a></li>
-              <li><a href="{% url 'booking' %}" class="hvr-grow">Booking &amp; Info</a></li>
+              <li><a href="{% url 'pricing' %}" class="hvr-grow">Pricing</a></li>
+              
+
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="oswald">FAQs</a></li>
+                    <li><a href="#" class="oswald">Things To Do Around Strangford</a></li>
+                    <li><a href="#" class="oswald">Chapel/Barn Info</a></li>
+                </ul>
+            </li>
+
               <li><a href="{% url 'vendors' %}" class="hvr-grow">Vendors</a></li>
               <li><a href="/" class="hvr-grow">Contact Us</a></li>
           </ul>
@@ -86,11 +98,11 @@
 </div>
 <div class="col-sm-4">
     <h3> Where We Are </h3>
-    <p> Old Court Chapel Weddings </br> 60 Old Court </br> Strangford </br> Co. Down </br> Northern Ireland </br> BT30 7NB 
+    <p> Old Court Chapel Weddings <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB 
     </p>    
 </div> 
 
-<div class="col-sm-4">
+<div class="col-sm-4 website_info">
     <h3> Website Info </h3>
     <p>Website Designed by Katie Maxwell</p>
     <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="30px"/></a>
@@ -107,6 +119,7 @@
   <script type="text/javascript" src="{% static 'lib/js/jquery-3.2.1.js' %}"></script>
   <script type="text/javascript" src="{% static 'lib/js/bootstrap.js' %}"></script>
   <script type="text/javascript" src="{% static 'lib/js/jquery.fancybox.js' %}"></script>
+  <script src="{% static "lib/js/jquery.easing.min.js" %}"></script>
   <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
 </body>

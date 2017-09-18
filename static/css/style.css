@@ -1,5 +1,5 @@
 body {
-    background-color: #fffff0;
+    background-color: white;
     color: white;
     position: relative;
 
@@ -39,6 +39,10 @@ a {
 
 .pink {
     color:rgb(199, 151, 173);
+}
+
+.dark_purple {
+    color: rgb(59, 11, 48);
 }
 
 .textcentre {
@@ -90,7 +94,7 @@ hr.longer {
 } 
 
 .navbar-default {
-    background-color:rgb(199, 151, 173);
+    background-color: #FFFFF0;
 }
 
 .navbar .navbar-brand {
@@ -130,20 +134,26 @@ hr.longer {
 }
 
 .navbar .navbar-nav > li > a:hover {
-    color: #FFFFF0;
-	text-shadow: 2px 2px 2px black;
-	transform: scale(1.15, 1.15);
+    color: rgb(59, 11, 48);
+	/* text-shadow: 2px 2px 2px black; */
+	transform: scale(1.25, 1.25);
 	transition: scale 4000 ease;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: transparent;
+    background-color: transparent;
 }
 
 .header {
     box-shadow: 0 2px 3px black;
     padding-bottom: 120px;
     padding-top: 150px;
+    text-align: center;
 }
 
 .header1 {
-    background: url("insidechapel5.jpg") no-repeat center center fixed;
+    background: url("garden26.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -199,7 +209,7 @@ hr.longer {
     font-size: 70px;
     font-weight: 700;
     line-height: normal;
-    color: #FFFFF0;
+    color: rgb(255, 255, 240);
 }
 
 .address-bar {
@@ -212,11 +222,23 @@ hr.longer {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #FFFFF0;
+    color: white;
 }
 
 /*-------------------------------------------------------*/
 /*---------------------index.html CSS--------------------*/
+
+#downarrow {
+    padding-top: 70px;
+}
+
+#mainindexsection {
+    padding-top: 60px;
+}
+
+.linetopmargin {
+    margin-bottom: 40px;
+}
 
 .intro {
     padding-left: 20px;
@@ -258,7 +280,7 @@ hr.longer {
 	position:absolute;
 	bottom:30%;
 	width:100%;
-	background-color:rgba(255,255,240, 0.7);
+	background-color:rgba(255,255,255, 0.6);
 	color:black;
 }
 
@@ -393,6 +415,9 @@ label, input {
   width: 100%;
   bottom: 0;
   text-align: center;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 footer p {
@@ -418,7 +443,7 @@ p {
 
 .navbar {
     border: none;
-    background: rgba(199, 151, 173, 0.9);
+    background: rgba(255, 255, 240, 0.9);
     margin-bottom: 45px;
 }
 
@@ -429,8 +454,8 @@ p {
 .navbar
 .navbar-nav > li > a {
     line-height: normal;
-    color: #FFFFF0;
-    font-size: 17px;
+    color: rgb(59, 11, 48);
+    font-size: 20px;
 }
 
 .navbar-nav {
@@ -475,7 +500,8 @@ margin: 0;
 }
 
 .description_content{
-	padding:60px;
+    padding:60px;
+    font-size: 45px;
 }
 
 .titles > h1 {

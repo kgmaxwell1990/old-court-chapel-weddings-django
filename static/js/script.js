@@ -30,6 +30,16 @@ function initMap() {
     });
 }
 
-function myFunction() {
-    alert("Your information was received & we will get back to you as soon as possible!");
-}
+// function myFunction() {
+//     alert("Your information was received & we will get back to you as soon as possible!");
+// }
+
+$(function() {
+    $(document).on('click', 'a.page-scroll', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
