@@ -47,21 +47,11 @@
           <ul class="nav navbar-nav">
               <li><a href="{% url 'index' %}" class="hvr-grow">Home</a></li>
               <li><a href="{% url 'gallery' %}" class="hvr-grow">Gallery</a></li>
-              <li><a href="{% url 'pricing' %}" class="hvr-grow">Pricing</a></li>
-              
-
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" class="oswald">FAQs</a></li>
-                    <li><a href="#" class="oswald">Things To Do Around Strangford</a></li>
-                    <li><a href="#" class="oswald">Chapel/Barn Info</a></li>
-                </ul>
-            </li>
+              <li><a href="{% url 'pricing' %}" class="hvr-grow">Pricing & Info</a></li>
 
               <li><a href="{% url 'vendors' %}" class="hvr-grow">Vendors</a></li>
               <li><a href="/" class="hvr-grow">Contact Us</a></li>
+
           </ul>
 
 
@@ -78,36 +68,54 @@
                 </div>
             </div>
         {% endif %}
-    </div>
+</div>
 
 
 
 {% block content %}
+
+
 {% endblock content %}
 
 
 
 <footer id="footer">
     <hr class="style14 longer">
-    <div class="col-sm-4"> 
-    <h3> Connect </h3>
-    <p> (+44)2844881318 / (+44)7783345130 </br> oldcourtchapelweddings@gmail.com</p>
-    <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
-    <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
-    <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
+<div class="row">
+
+<div class="col-sm-4 dark_purple quick_links">
+        <h3> Quick Links </h3>
+        <a class="hvr-grow" href="#"><p> FAQ's </p></a>
+        <a class="hvr-grow" href="#"><p> Pricing </p></a>
+        <a class="hvr-grow" href="#"><p> Vendors </p></a>
+        <a class="hvr-grow" href="#"><p> Contact Us</p></a>
+        <a class="hvr-grow" href="#"><p> Things to do around Strangford</p></a>
 </div>
+
 <div class="col-sm-4">
     <h3> Where We Are </h3>
     <p> Old Court Chapel Weddings <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB 
     </p>    
 </div> 
 
-<div class="col-sm-4 website_info">
-    <h3> Website Info </h3>
+<div class="col-sm-4"> 
+        <h3> Connect </h3>
+        <p> (+44)2844881318 / (+44)7783345130 </br> oldcourtchapelweddings@gmail.com</p>
+        <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
+        <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
+        <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="col-sm-12 website_info dark_purple">
     <p>Website Designed by Katie Maxwell</p>
     <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="30px"/></a>
     <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="30px"/></a>
     <p>Copyright © 2017</p>
+</div>
 </div>
 
 </footer>

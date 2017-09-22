@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: black;
+    color: rgb(59, 11, 48);
     font-family: 'Great Vibes', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -422,8 +422,17 @@ label, input {
 
 footer p {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     font-family: Raleway;
+}
+
+.website_info p,
+.website_info a{
+    display: inline-block;
+}
+
+.quick_links a {
+    display: block;
 }
 
 
