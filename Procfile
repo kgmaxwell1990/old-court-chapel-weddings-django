@@ -1,0 +1,1 @@
+web: gunicorn old_court_chapel_weddings.wsgi:application

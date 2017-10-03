@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['old-court-chapel-weddings.herokuapp.com', '127.0.0.1']
+INTERNAL_IPS = ['127.0.0.1']
 
 # console
 # EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' 
