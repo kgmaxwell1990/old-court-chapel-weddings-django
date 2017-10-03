@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +28,24 @@ DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = []
 
+# console
+# EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' 
+# DEFAULT_FROM_EMAIL='testing@example.com'
+# EMAIL_HOST_USER=''
+# EMAIL_HOST_PASSWORD=''
+# EMAIL_USE_TLS=False 
+# EMAIL_PORT=1025
+
+
+
+#gmail
+EMAIL_USE_TLS = True       
+EMAIL_HOST = 'smtp.gmail.com'      
+EMAIL_PORT = 587     
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')     
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 
 # Application definition
 
@@ -38,6 +57,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'django_forms_bootstrap',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +143,35 @@ STATICFILES_DIRS = (
    os.path.join(BASE_DIR, "static"),
 )
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# TO RUN LOCALLY HAVE THESE TWO UNCOMMENTED #
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+
+
+# TO RUN ON HEROKU HAVE THESE UNCOMMENTED #
+
+# AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
+#     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+#     'Cache-Control': 'max-age=94608000',
+# }
+
+# AWS_STORAGE_BUCKET_NAME = os.environ.get('BUCKET_NAME')
+# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
+# AWS_S3_HOST = 's3-eu-west-1.amazonaws.com'
+# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+# STATICFILES_LOCATION = 'static'
+# STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+# STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+
+# MEDIAFILES_LOCATION = 'media'
+# MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+# DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 

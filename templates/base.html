@@ -32,7 +32,7 @@
 
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -47,14 +47,10 @@
           <ul class="nav navbar-nav">
               <li><a href="{% url 'index' %}" class="hvr-grow">Home</a></li>
               <li><a href="{% url 'gallery' %}" class="hvr-grow">Gallery</a></li>
-              <li><a href="{% url 'pricing' %}" class="hvr-grow">Pricing & Info</a></li>
-
+              <li><a href="{% url 'pricing' %}" class="hvr-grow">Pricing &amp; Info</a></li>
               <li><a href="{% url 'vendors' %}" class="hvr-grow">Vendors</a></li>
-              <li><a href="/" class="hvr-grow">Contact Us</a></li>
-
+              <li><a href="{% url 'contact' %}" class="hvr-grow">Contact Us</a></li>
           </ul>
-
-
       </div>
 </nav>
 
@@ -81,7 +77,7 @@
 
 <footer id="footer">
     <hr class="style14 longer">
-<div class="row">
+<div class="row footer_content">
 
 <div class="col-sm-4 dark_purple quick_links">
         <h3> Quick Links </h3>
@@ -112,8 +108,8 @@
 <div class="row website_info ">
 <div class="col-sm-12 dark_purple">
     <p>Website Designed by Katie Maxwell</p>
-    <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="30px"/></a>
-    <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="30px"/></a>
+    <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="25px"/></a>
+    <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="25px"/></a>
     <p>Copyright © 2017</p>
 </div>
 </div>
@@ -129,6 +125,10 @@
   <script type="text/javascript" src="{% static 'lib/js/jquery.fancybox.js' %}"></script>
   <script src="{% static "lib/js/jquery.easing.min.js" %}"></script>
   <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPV01PlDYzI7UEu4u1lxdB97B0Mcg_c_g&callback=initMap">
+  </script>
 
 </body>
 

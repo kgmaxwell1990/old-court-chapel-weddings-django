@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from home.views import get_index, get_gallery, get_pricing, get_vendors, get_info
+from home.views import get_index, get_gallery, get_pricing, get_vendors, get_info, contact
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^pricing/', get_pricing, name="pricing"),
     url(r'^vendors/', get_vendors, name="vendors"),
     url(r'^info/', get_info, name="info"),
+    url(r'^contact/', contact, name="contact"),
 ]

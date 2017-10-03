@@ -38,7 +38,7 @@ a {
 }
 
 .pink {
-    color:rgb(199, 151, 173);
+    color:#6A0136;
 }
 
 .dark_purple {
@@ -47,6 +47,19 @@ a {
 
 .textcentre {
     text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.align_right h2,
+.align_right ul {
+    text-align: right;
+}
+
+.align_left {
+    text-align: left;
 }
 
 hr.style14 { 
@@ -64,6 +77,22 @@ hr.longer {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+.messages {
+    color: rgb(255, 255, 240);
+    font-size: 20px;
+    font-family: Oswald, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgb(59, 11, 48);
+    border: none;
+    margin: 0;
+
+}
+
 
 
 /*---------------------- hover.css --------------------*/
@@ -86,6 +115,43 @@ hr.longer {
   transform: scale(1.1);
 }
 
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
 /*-------------------------------------------------------*/
 /*-------------------navbar & header CSS-----------------*/
 
@@ -94,20 +160,32 @@ hr.longer {
 } 
 
 .navbar-default {
-    background-color: #FFFFF0;
+    background-color: rgba(238, 238, 238, 0.8);
 }
 
 .navbar .navbar-brand {
-	color: #FFFFF0;
+	color: rgb(59, 11, 48);
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.3em;
-	text-shadow: 1px 1px 1px black;
 	text-transform: none;
 }
 
-.navbar .navbar-toggle {
-	background-color: #FFFFF0;
-	border-color: #FFFFF0;
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+}
+
+/* .navbar .navbar-toggle {
+    background: none;
+    border:none;
+} */
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(59, 11, 48);
 }
 
 .address-bar {
@@ -124,12 +202,12 @@ hr.longer {
 }
 
 .navbar .navbar-nav > li > a {
-	color: #FFFFF0;
+	color: rgb(59, 11, 48);
     cursor: pointer;
 	font-family: Raleway;
     font-size: 20px;
     text-align: center;
-	text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
     text-transform: uppercase; 
 }
 
@@ -161,7 +239,7 @@ hr.longer {
 }
 
 .header2 {
-    background: url("marquee8.jpg") no-repeat center center fixed;
+    background: url("marquee4.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -325,18 +403,17 @@ video {
 }
 
 button.accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: rgba(100, 1, 54, 0.2);
+    color: rgb(59, 11, 48);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    /* border: double rgb(59, 11, 48); */
     text-align: left;
     outline: none;
-    font-size: 40px;
     transition: 0.4s;
     font-family: 'great vibes', sans-serif;
-    border-radius: 30px;
+    border-radius: 10px;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -347,12 +424,12 @@ button.accordion > h1 {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: rgba(100, 1, 54, 0.3);
 }
 
 button.accordion:after {
     content: '\002B';
-    color: #777;
+    color: rgb(59, 11, 48);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -383,6 +460,7 @@ div.panel {
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
 }
 
+
 fieldset {
 	padding: 20px;
 	margin-top: 20px;
@@ -394,25 +472,54 @@ label, input {
     color: BLACK;
 }
 
-.btn-primary {
+.btn-success {
     background-color:gray;
     border: none;
+    width: 50%;
+    font-family: Raleway;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.btn-primary:hover {
-    background-color: rgb(199, 151, 173);
-    color: black;
+.btn-success:hover {
+    background-color: rgb(59, 11, 48);
 }
+
 
 .form-group {
     text-align: center;
 }
 
+#div_id_contact_name > label,
+#div_id_contact_email > label,
+#div_id_content > label {
+    color: rgb(59, 11, 48);
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    font-size: 24px;
+}
+
+.titles > h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+textarea.form-control {
+    max-height: 147px;
+}
+
+.contact_form {
+    text-align: center;
+}
+
+
 /*-------------------------------------------------------*/
 /*------------------------footer CSS---------------------*/
 
 #footer {
-  height: 360px;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -421,9 +528,13 @@ label, input {
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.footer_content {
+    padding: 10px;
+}
+
 footer p {
     margin: 0;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
 }
 
 .website_info {
@@ -448,8 +559,13 @@ footer p {
 
 @media screen and (min-width:768px) {
 
+.messages {
+    margin-top: 70px;
+}
+
 p {
     font-size: 14px;
+    font-family: Raleway, sans-serif;
 }
 
 .navbar-header {
@@ -458,7 +574,7 @@ p {
 
 .navbar {
     border: none;
-    background: rgba(255, 255, 240, 0.9);
+    background: rgba(238, 238, 238, 0.9);
     margin-bottom: 45px;
 }
 
@@ -546,9 +662,20 @@ button.accordion {
     border: none;
 }
 
-#footer {
-    height: 200px;
+.footer_content {
+    padding-bottom: 40px;
 
+}
+
+.titles > h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.contact_page_details {
+    padding: 30px 10px;
 }
 }
 
