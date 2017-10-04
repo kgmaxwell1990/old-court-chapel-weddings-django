@@ -32,6 +32,46 @@
 
 <body>
 
+<div id="faqModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Can I get Married in the Church? I am x religion</h3>
+                <p>Any mainstream Religion can use the Church for the ceremony</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+</div>
+
+<div id="thingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">Things to do in the Area</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Can I get Married in the Church? I am x religion</h3>
+                <p>Any mainstream Religion can use the Church for the ceremony</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+<div class="container-fluid">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -74,47 +114,48 @@
 {% endblock content %}
 
 
-
-<footer id="footer">
+    <footer id="footer">
     <hr class="style14 longer">
-<div class="row footer_content">
+    <div class="row footer_content">
 
-<div class="col-sm-4 dark_purple quick_links">
-        <h3> Quick Links </h3>
-        <a class="hvr-grow" href="#"><p> FAQ's </p></a>
-        <a class="hvr-grow" href="#"><p> Pricing </p></a>
-        <a class="hvr-grow" href="#"><p> Vendors </p></a>
-        <a class="hvr-grow" href="#"><p> Contact Us</p></a>
-        <a class="hvr-grow" href="#"><p> Things to do around Strangford</p></a>
-</div>
+        <div class="col-sm-4 dark_purple quick_links">
+                <h3> Quick Links </h3>
+                <a class="hvr-grow" href="#" data-toggle="modal" data-target="#faqModal"><p> FAQ's </p></a>
+                <a class="hvr-grow" href="{% url "pricing" %}"><p> Pricing </p></a>
+                <a class="hvr-grow" href="{% url "vendors" %}"><p> Vendors </p></a>
+                <a class="hvr-grow" href="{% url "contact" %}"><p> Contact Us</p></a>
+                <a class="hvr-grow" href="#" data-toggle="modal" data-target="#thingsModal"><p> Things to do around Strangford</p></a>
+        </div>
 
-<div class="col-sm-4">
-    <h3> Where We Are </h3>
-    <p> Old Court Chapel Weddings <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB 
-    </p>    
-</div> 
+        <div class="col-sm-4">
+            <h3> Where We Are </h3>
+            <p> Old Court Chapel Weddings <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB 
+            </p>    
+        </div> 
 
-<div class="col-sm-4"> 
-        <h3> Connect </h3>
-        <p> (+44)2844881318 / (+44)7783345130 <br> oldcourtchapelweddings@gmail.com</p>
-        <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
-        <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
-        <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
-</div>
+        <div class="col-sm-4"> 
+                <h3> Connect </h3>
+                <p> (+44)2844881318 / (+44)7783345130 <br> oldcourtchapelweddings@gmail.com</p>
+                <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
+                <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
+                <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
+        </div>
 
 
-</div>
-
-<div class="row website_info ">
-<div class="col-sm-12 dark_purple">
-    <p>Website Designed by Katie Maxwell</p>
-    <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="25px"/></a>
-    <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="25px"/></a>
-    <p>Copyright © 2017</p>
-</div>
-</div>
-
+    </div>
 </footer>
+
+    <div class="row website_info ">
+    <div class="col-sm-12 dark_purple">
+        <p>Website Designed by Katie Maxwell</p>
+        <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="{% static 'images/Linkedin.png'%}" width="25px"/></a>
+        <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="{% static 'images/Github.png' %}" width="25px"/></a>
+        <p>Copyright © 2017</p>
+    </div>
+    </div>
+
+
+</div>
 
     
 

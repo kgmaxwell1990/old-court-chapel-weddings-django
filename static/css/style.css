@@ -5,6 +5,8 @@ body {
 
 }
 
+
+
 h1,
 h2,
 h3,
@@ -23,6 +25,7 @@ p {
     color: black;
 	font-size: 12px;
     text-align: center;
+    font-weight: 100;
 }
 
 a {
@@ -439,6 +442,7 @@ button.accordion {
     border-radius: 10px;
     text-align: center;
     margin-bottom: 5px;
+    font-size: 30px;
 }
 
 button.accordion > h1 {
@@ -553,8 +557,8 @@ textarea.form-control {
 }
 
 .footer_content {
-    padding: 10px;
-    margin-bottom: 35px;
+    padding: 10px 10px 35px 10px;
+
 }
 
 footer p {
@@ -565,6 +569,7 @@ footer p {
 .website_info {
     background: rgb(59, 11, 48);
     padding: 5px;
+    text-align: center;
 }
 
 .website_info p,
@@ -583,6 +588,10 @@ footer p {
 /*==============================================MEDIA QUERY=========================================*/
 
 @media screen and (min-width:768px) {
+
+.container-fluid {
+        padding: 0;
+    }
 
 .messages {
     margin-top: 70px;

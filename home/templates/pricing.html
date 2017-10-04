@@ -2,10 +2,11 @@
 {% load static from staticfiles %}
 
 {% block content %}
-
-<div class="header header3">
-        <div class="brand">Pricing & Info</div>
-</div> 
+<div class="row">
+    <div class="header header3">
+            <div class="brand">Pricing &amp; Info</div>
+    </div> 
+</div>
       
       <hr class="style14">
       
@@ -39,26 +40,6 @@
                     </div>
             </div>
 
-            {% comment %} <div class="row">
-                <div class="col-md-6 card">
-                        <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/garden23.jpg' %}" width="100%"/>
-                        <div class="description">
-                        <h3 class="description_content hvr-grow dark_purple">Frequently Asked Questions </h3>
-                        </div>
-                        </a>
-                    </div>
-                
-                    <div class="col-md-6 card">
-                        <a href="{% url 'pricing' %}">
-                        <img src="{% static 'images/stockstrangford.jpg' %}" width="100%"/>
-                        <div class="description">
-                        <h3 class="description_content hvr-grow dark_purple">Things to do around Strangford</h3>
-                        </div>
-                        </a>
-                    </div>
-                
-            </div> {% endcomment %}
             <div class="container-fluid">    
 
                 <hr class="style14">
@@ -69,7 +50,7 @@
                     <a href="{% url 'vendors' %}">
                     <img src="{% static 'images/garden19.jpg' %}" width="100%"/>
                     <div class="description">
-                    <h3 class="description_content hvr-grow dark_purple"> Frequently Asked Questions </h3>
+                            <a class="hvr-grow" href="#" data-toggle="modal" data-target="#faqModal"> <h3 class="description_content hvr-grow dark_purple">Frequently Asked Questions</h3></a> 
                     </div>
                     </a>
                   </div>
@@ -78,7 +59,7 @@
                     <a href="/">
                     <img src="{% static 'images/marquee3.jpg' %}" width="100%"/>
                     <div class="description">
-                    <h3 class="description_content hvr-grow dark_purple">Things to do around Strangford </h3>
+                    <a class="hvr-grow" href="#" data-toggle="modal" data-target="#thingsModal"><h3 class="description_content hvr-grow dark_purple">Things to do around Strangford </h3></a>
                     </div>
                     </a>
                   </div>
