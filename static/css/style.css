@@ -394,6 +394,26 @@ video {
     border-radius: 10px;
 }
 
+#video {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#video video {
+    width: 90%;
+}
+
+#video > p {
+    color: white;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 /*-------------------------------------------------------*/
 /*--------------------pricing.html CSS-------------------*/
@@ -715,6 +735,16 @@ button.accordion {
 .days_leading_up {
     font-size: 20px;
 }
+
+#video {
+    width: 60%;
+}
+
+#video video {
+    width: 90%;
+}
+
+
 }
 
 
