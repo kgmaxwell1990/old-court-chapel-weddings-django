@@ -41,7 +41,7 @@
           <form role="form" action="{% url 'contact' %}" method="POST" class="contact_form">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
-                <a class="btn btn-success hvr-grow" type="submit">Submit</a>
+                <button class="btn btn-success hvr-grow" type="submit">Submit</button>
             </form>
         </div>
       </div>

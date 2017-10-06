@@ -84,8 +84,11 @@ hr.longer {
 
 .messages {
     color: rgb(255, 255, 240);
-    font-size: 20px;
+    font-size: 15px;
     font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
     margin-top: 50px;
     text-align: center;
 }
@@ -95,6 +98,15 @@ hr.longer {
     border: none;
     margin: 0;
 
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
 }
 
 
@@ -615,6 +627,10 @@ footer p {
 
 .messages {
     margin-top: 70px;
+}
+
+.modal-body h3 {
+    font-size: 20px;
 }
 
 p {

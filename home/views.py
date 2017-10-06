@@ -55,7 +55,7 @@ def contact(request):
                 headers = {'Reply-To': contact_email }
             )
             email.send()
-            messages.success(request, 'We have received your email & will get back to you ASAP!')
+            messages.success(request, 'We have received your email & will get back to you as soon as possible!')
             return redirect('index')
 
     return render(request, 'contact.html', {
