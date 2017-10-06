@@ -10,14 +10,27 @@
 
       
       <hr class="style14">
+<div class="gal">
 
- <div id="video">  
-  <video preload="preload"  id="video" autoplay="autoplay" loop="loop" mute controls="controls">
-  <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
-  </video> 
-  <p> Footage credit - Ross James</p>
-  </div>
+    <div class="gal_menu">
+        <ul>
+            <li><a href="#">Video</li>
+            <li><a href="#">Gardens</li>
+            <li><a href="#">Reception</li>
+            <li><a href="#">Gardens</li>
+        </ul>
+    </div>
+
+    <div class="gal_video">
+        <div id="video">  
+        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" mute controls="controls">
+        <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
+        </video> 
+        <p> Footage credit - Ross James</p>
+        </div>
+    </div>
       
+    <div class="gal_chapel">
       <div class="imagegallery textcentre titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
           <!-- landscape photos -->
@@ -37,7 +50,9 @@
           <a data-fancybox="gallery" href="{% static 'images/insidechapel6.jpg' %}"><img src="{% static 'images/insidechapel6.jpg' %}" width="300px" height="400px"></a>
           <a data-fancybox="gallery" href="{% static 'images/chapel8.jpg' %}"><img src="{% static 'images/chapel8.jpg' %}" width="300px" height="400px"></a>
       </div>
+    </div>
       
+    <div class="gal_reception">
       <div class=" imagegallery textcentre titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
           <!-- landscape photos -->
@@ -59,7 +74,9 @@
           <!-- portrait photos -->
           {% comment %} <a data-fancybox="gallery" href="{% static 'images/marquee5.jpg' %}"><img src="{% static 'images/marquee5.jpg' %}" width="300px" height="400px"></a> {% endcomment %}
       </div>
+    </div>
       
+    <div class="gal_gardens">
       <div class=" imagegallery textcentre titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
           <!-- landscape photos -->
@@ -82,12 +99,14 @@
           <a data-fancybox="gallery" href="{% static 'images/garden27.jpg' %}"><img src="{% static 'images/garden27.jpg' %}" width="300px" height="210px"></a>
           <a data-fancybox="gallery" href="{% static 'images/garden28.jpg' %}"><img src="{% static 'images/garden28.jpg' %}" width="300px" height="210px"></a>
           <a data-fancybox="gallery" href="{% static 'images/garden29.jpg' %}"><img src="{% static 'images/garden29.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden30.jpg' %}"><img src="{% static 'images/garden30.jpg' %}" width="300px" height="210px"></a></br>
+          <a data-fancybox="gallery" href="{% static 'images/garden30.jpg' %}"><img src="{% static 'images/garden30.jpg' %}" width="300px" height="210px"></a><br>
           <!-- portrait photos -->
           <a data-fancybox="gallery" href="{% static 'images/boathouse2.jpg' %}"><img src="{% static 'images/boathouse2.jpg' %}" width="300px" height="400px"></a>
           <a data-fancybox="gallery" href="{% static 'images/garden18.jpg' %}"><img src="{% static 'images/garden18.jpg' %}" width="300px" height="400px"></a>
           <a data-fancybox="gallery" href="{% static 'images/garden21.jpg' %}"><img src="{% static 'images/garden21.jpg' %}" width="300px" height="400px"></a>
       
       </div>
+    </div>
+</div>
 
       {% endblock content %}
