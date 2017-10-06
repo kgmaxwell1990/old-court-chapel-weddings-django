@@ -266,9 +266,9 @@ hr.longer {
 
 .header3 {
     background: url("insidechapel8.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
     -o-background-size: cover; 
     padding-bottom: 200px;
     padding-top: 200px;
