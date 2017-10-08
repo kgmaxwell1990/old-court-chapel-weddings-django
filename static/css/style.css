@@ -415,6 +415,10 @@ video {
     text-align: center;
 }
 
+.gal_video p {
+    font-size: 15px;
+}
+
 .gallerycaps {
     margin-right: 10px;
 }
@@ -446,6 +450,7 @@ video {
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 10px;
 }
 
 

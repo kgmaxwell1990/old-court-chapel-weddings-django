@@ -12,18 +12,18 @@
       <hr class="style14">
 <div class="gal">
 
-    <div class="gal_menu">
+    {% comment %} <div class="gal_menu">
         <ul>
             <li><a href="#">Video</li>
             <li><a href="#">Gardens</li>
             <li><a href="#">Reception</li>
             <li><a href="#">Gardens</li>
         </ul>
-    </div>
+    </div> {% endcomment %}
 
     <div class="gal_video">
         <div id="video">  
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" mute controls="controls">
+        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
         <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
         </video> 
         <p> Footage credit - Ross James</p>
