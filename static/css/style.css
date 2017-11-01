@@ -381,6 +381,8 @@ hr.longer {
 
 .card{
     position:relative;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .card > a > img {
@@ -446,7 +448,7 @@ video {
 
 .gal_menu ul li a {
     color: rgb(255, 255, 240);
-    font-size: 15px;
+    font-size: 12px;
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     font-weight: 100;

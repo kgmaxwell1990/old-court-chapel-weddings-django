@@ -2,7 +2,12 @@ $(window).scroll(function(e){
     var $el = $('.gal_menu'); 
     var isPositionFixed = ($el.css('position') == 'fixed');
     if ($(this).scrollTop() > 500 && !isPositionFixed){ 
-      $('.gal_menu').css({'position': 'fixed', 'top': '77px'}); 
+        if (screen.width < 960) {
+            $('.gal_menu').css({'position': 'fixed', 'top': '53px'}); 
+        }
+        else {
+            $('.gal_menu').css({'position': 'fixed', 'top': '77px'});
+        }
     }
     if ($(this).scrollTop() < 500 && isPositionFixed)
     {
