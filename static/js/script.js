@@ -1,3 +1,15 @@
+$(window).scroll(function(e){ 
+    var $el = $('.gal_menu'); 
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > 500 && !isPositionFixed){ 
+      $('.gal_menu').css({'position': 'fixed', 'top': '77px'}); 
+    }
+    if ($(this).scrollTop() < 500 && isPositionFixed)
+    {
+      $('.gal_menu').css({'position': 'static', 'top': '0px'}); 
+    } 
+  });
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 

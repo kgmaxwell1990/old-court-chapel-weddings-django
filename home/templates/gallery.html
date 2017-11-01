@@ -12,26 +12,38 @@
       <hr class="style14">
 <div class="gal">
 
-    {% comment %} <div class="gal_menu">
+    <div class="gal_menu">
         <ul>
-            <li><a href="#">Video</li>
-            <li><a href="#">Gardens</li>
-            <li><a href="#">Reception</li>
-            <li><a href="#">Gardens</li>
+            <li><a href="#vid_section" class="page-scroll">Video</a></li>
+            <li><a href="#chapel_section" class="page-scroll">Chapel</a></li>
+            <li><a href="#reception_section" class="page-scroll">Reception</a></li>
+            <li><a href="#garden_section" class="page-scroll">Gardens</a></li>
         </ul>
-    </div> {% endcomment %}
+    </div>
 
+    {% comment %} <section id="vid_section">
     <div class="gal_video">
         <div id="video">  
         <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
-        <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
+            <source src="https://www.youtube.com/watch?v=d160c59RlRw#t=10,15" type="video/mp4"></source>
+        </video> 
+        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
+            <source src="static/video/video.mp4#t=10,15" type="video/mp4"></source>
+        </video>
+        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
+            <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
+        </video> 
+        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
+            <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
         </video> 
         <p> Footage credit - Ross James</p>
         </div>
     </div>
-      
+    </section> {% endcomment %}
+
+    <section id="chapel_section">  
     <div class="gal_chapel">
-      <div class="imagegallery textcentre titles">
+      <div class="imagegallery textcentre titles gal_titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
           <!-- landscape photos -->
           <a data-fancybox="gallery" href="{% static 'images/chapel1.jpg' %}"><img src="{% static 'images/chapel1.jpg' %}" width="300px" height="210px"></a>
@@ -51,9 +63,11 @@
           <a data-fancybox="gallery" href="{% static 'images/chapel8.jpg' %}"><img src="{% static 'images/chapel8.jpg' %}" width="300px" height="400px"></a>
       </div>
     </div>
-      
+    </section>
+    
+    <section id="reception_section">
     <div class="gal_reception">
-      <div class=" imagegallery textcentre titles">
+      <div class=" imagegallery textcentre titles gal_titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
           <!-- landscape photos -->
           <a data-fancybox="gallery" href="{% static 'images/marquee8.jpg' %}"><img src="{% static 'images/marquee8.jpg' %}" width="300px" height="210px"></a>
@@ -75,9 +89,11 @@
           {% comment %} <a data-fancybox="gallery" href="{% static 'images/marquee5.jpg' %}"><img src="{% static 'images/marquee5.jpg' %}" width="300px" height="400px"></a> {% endcomment %}
       </div>
     </div>
-      
+    </section>
+
+    <section id="garden_section">
     <div class="gal_gardens">
-      <div class=" imagegallery textcentre titles">
+      <div class=" imagegallery textcentre titles gal_titles">
           <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
           <!-- landscape photos -->
           <a data-fancybox="gallery" href="{% static 'images/boathouse1.jpg' %}"><img src="{% static 'images/boathouse1.jpg' %}" width="300px" height="210px"></a>
@@ -107,6 +123,7 @@
       
       </div>
     </div>
+    </section>
 </div>
 
       {% endblock content %}
