@@ -27,12 +27,38 @@
                 stables, a yurt-inspired <span class="greatvibes caps pink">M</span>
                 arquee and several acres of natural gardens sweeping down to the 
                 <span class="greatvibes caps pink">L</span>ough Shore.</p>
-               <div class="imagesacross"> 
-                <img src="{% static 'images/insidechapel2.jpg' %}" width="250px"/>
-                <img src="{% static 'images/barn3.jpg' %}" width="250px"/>
-                <img src="{% static 'images/marquee6.jpg' %}" width="250px"/>
-                <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/>
-               </div>
+            </div>
+          </div>
+          <hr class="style14">
+          <div class="row cards">
+              <div class="col-md-3 card card1">
+                <a href="{% url 'gallery' %}">
+                <!-- <img src="{% static 'images/insidechapel2.jpg' %}" width="250px"/> -->
+                <h3>Gallery</h3>
+                </a>
+              </div>
+              <div class="col-md-3 card card2">
+                <a href="{% url 'pricing' %}">
+                <!-- <img src="{% static 'images/barn3.jpg' %}" width="250px"/> -->
+                <h3>Info</h3>
+                </a>
+              </div>
+              <div class="col-md-3 card card3">
+                <a href="{% url 'vendors' %}">
+                <!-- <img src="{% static 'images/marquee6.jpg' %}" width="250px"/> -->
+                <h3>Vendors</h3>
+                </a>
+              </div>
+              <div class="col-md-3 card card4">
+                <a href="{% url 'contact' %}">
+                <!-- <img src="{% static 'images/boathouse3.jpg' %}" width="250px"/> -->
+                <h3>Contact</h3>
+                </a>
+              </div>
+          </div>
+          <hr class="style14">
+          <div class="row">
+            <div class="col-sm-12 intro">
               <p class="raleway"><span class="greatvibes caps pink">T</span>
                 he opportunities for fabulous photos are quite breathtaking.  
                 The venue will be <span class="greatvibes caps pink">E</span>xclusively 
@@ -42,56 +68,12 @@
                 with everything as you would like it, ready to enjoy a 
                 <span class="greatvibes caps pink">M</span>emorable day and evening.</p>
             </div>
+          </div>
           </div> 
       
-          <hr class="style14">
+   
       
-          <div class="row cards">
-      
-            <div class="col-lg-6 col-md-6 col-sm-12 card">
-              <a href="{% url 'gallery' %}">
-              <img src="{% static 'images/marquee12.jpg' %}" width="100%"/>
-              <div class="description">
-              <h3 class="description_content hvr-grow dark_purple">Check out our Gallery </h3>
-              </div>
-              </a>
-            </div>
-      
-            <div class="col-lg-6 col-md-6 col-sm-12 card">
-              <a href="{% url 'pricing' %}">
-              <img src="{% static 'images/insidechapel8.jpg' %}" width="100%"/>
-              <div class="description">
-              <h3 class="description_content hvr-grow dark_purple">Pricing &amp; Info</h3>
-              </div>
-              </a>
-            </div>
-      
-          </div>
 
-
-      
-          <div class="row cards">
-      
-            <div class="col-lg-6 col-md-6 col-sm-12 card">
-              <a href="{% url 'vendors' %}">
-              <img src="{% static 'images/garden19.jpg' %}" width="100%"/>
-              <div class="description">
-              <h3 class="description_content hvr-grow dark_purple"> Suggestions of Vendors </h3>
-              </div>
-              </a>
-            </div>
-      
-            <div class="col-lg-6 col-md-6 col-sm-12 card">
-              <a href="/">
-              <img src="{% static 'images/marquee3.jpg' %}" width="100%"/>
-              <div class="description">
-              <h3 class="description_content hvr-grow dark_purple">Get In Touch </h3>
-              </div>
-              </a>
-            </div>
-      
-          </div>
-      </div>
     </section>
 
 

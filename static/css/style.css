@@ -82,6 +82,10 @@ a:focus {
     text-align: left;
 }
 
+.capitals {
+    text-transform: uppercase;
+}
+
 hr.style14 { 
     background-image: -webkit-linear-gradient(left, #f0f0f0, black, #f0f0f0);
     background-image: -moz-linear-gradient(left, #f0f0f0, black, #f0f0f0);
@@ -361,34 +365,81 @@ hr.longer {
     font-size: 20px;
 }
 
-.imagesacross {
-    text-align: center;
-    width: 100%;
-}
-
-.imagesacross > img {
-    margin: 10px;
-    border-radius: 10px;
-} 
-
 .caps {
     font-size: 30px;
 }
+
+
 
 .cards {
 	text-align: center;
 }
 
-.card{
-    position:relative;
-    padding-left: 40px;
-    padding-right: 40px;
+.card {
+    box-shadow: 0 2px 3px black;
+
+    text-align: center;
 }
 
-.card > a > img {
-    border-radius: 10px;
-    margin-top: 10px;
-    max-height: 370px;
+/* .card1 {
+    background: url("garden26.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+} */
+
+.card1 {
+    background: url("marquee4.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.card2 {
+    background: url("insidechapel8.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.card3 {
+    background: url("garden13.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.card4 {
+    background: url("marquee8.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+
+.card h3 {
+    display: inherit;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: normal;
+    color: rgb(255, 255, 240);
 }
 
 .description {
@@ -396,7 +447,8 @@ hr.longer {
 	bottom:30%;
 	width:100%;
 	background-color:rgba(255,255,255, 0.6);
-	color:black;
+    color:black;
+    text-align: center;
 }
 
 .description_content{
@@ -845,6 +897,12 @@ button.accordion {
 
 .gal_titles h1 span {
     font-size: 70px;
+}
+
+.card h3 {
+
+    font-size: 50px;
+
 }
 
 }
