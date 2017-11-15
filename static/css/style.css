@@ -129,7 +129,9 @@ hr.longer {
     font-size: 15px;
 }
 
-
+.smbuttons {
+    padding-top: 20px;
+}
 
 
 
@@ -270,18 +272,18 @@ hr.longer {
 
 .header1 {
     background: url("garden26.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain; 
 }
 
 .header2 {
     background: url("marquee4.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain; 
     padding-bottom: 200px;
     padding-top: 200px;
 }
