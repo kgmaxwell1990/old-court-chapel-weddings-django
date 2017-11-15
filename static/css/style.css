@@ -292,7 +292,7 @@ hr.longer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
+    padding-bottom: 112px;
     padding-top: 200px;
 }
 
@@ -377,17 +377,9 @@ hr.longer {
 
 .card {
     box-shadow: 0 2px 3px black;
-
     text-align: center;
 }
 
-/* .card1 {
-    background: url("garden26.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; 
-} */
 
 .card1 {
     background: url("marquee4.jpg") no-repeat center center fixed;
@@ -395,8 +387,8 @@ hr.longer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .card2 {
@@ -405,8 +397,8 @@ hr.longer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .card3 {
@@ -415,18 +407,18 @@ hr.longer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .card4 {
-    background: url("marquee8.jpg") no-repeat center center fixed;
+    background: url("marquee6.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
@@ -692,8 +684,9 @@ textarea.form-control {
     max-height: 147px;
 }
 
-.contact_form {
+.contactform {
     text-align: center;
+    padding: 30px;
 }
 
 
@@ -903,6 +896,31 @@ button.accordion {
 
     font-size: 50px;
 
+}
+
+.card1 {
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.card2 {
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.card3 {
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.card4 {
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.contactform {
+
+    padding: 0;
 }
 
 }

@@ -38,11 +38,13 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 titles">
           <h1 class="raleway">...<span class="greatvibes caps pink gallerycaps">O</span>r Fill out this form</h1>
-          <form role="form" action="{% url 'contact' %}" method="POST" class="contact_form">
+          <div class="contactform">
+          <form role="form" action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
                 <button class="btn btn-success hvr-grow" type="submit">Submit</button>
             </form>
+          </div>
         </div>
       </div>
   
