@@ -271,25 +271,25 @@ hr.longer {
 }
 
 .header1 {
-    background: url("garden26.jpg") no-repeat center center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain; 
+    background: url("garden26-min.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
 }
 
 .header2 {
-    background: url("marquee4.jpg") no-repeat center center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain; 
+    background: url("marquee4-min.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
     padding-bottom: 200px;
     padding-top: 200px;
 }
 
 .header3 {
-    background: url("insidechapel8.jpg") no-repeat center fixed;
+    background: url("insidechapel8-min.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -299,7 +299,7 @@ hr.longer {
 }
 
 .header4 {
-    background: url("garden13.jpg") no-repeat center center fixed;
+    background: url("garden13-min.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -309,7 +309,7 @@ hr.longer {
 }
 
 .header5 {
-    background: url("marquee3.jpg") no-repeat center center fixed;
+    background: url("marquee3-min.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
