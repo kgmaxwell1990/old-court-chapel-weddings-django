@@ -384,7 +384,7 @@ hr.longer {
 
 
 .card1 {
-    background: url("marquee4.jpg") no-repeat center center fixed;
+    background: url("marquee4-min.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -394,7 +394,7 @@ hr.longer {
 }
 
 .card2 {
-    background: url("insidechapel8.jpg") no-repeat center fixed;
+    background: url("insidechapel8-min.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -404,7 +404,7 @@ hr.longer {
 }
 
 .card3 {
-    background: url("garden13.jpg") no-repeat center center fixed;
+    background: url("garden13-min.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
