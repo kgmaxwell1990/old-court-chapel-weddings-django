@@ -351,11 +351,11 @@ hr.longer {
 }
 
 #mainindexsection {
-    padding-top: 60px;
+    padding-top: 25px;
 }
 
 .linetopmargin {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 .intro {
@@ -374,11 +374,12 @@ hr.longer {
 
 
 .cards {
-	text-align: center;
+    text-align: center;
+
 }
 
 .card {
-    box-shadow: 0 2px 3px black;
+    /* box-shadow: 0 2px 3px black; */
     text-align: center;
 }
 
@@ -701,6 +702,7 @@ textarea.form-control {
   text-align: center;
   background-color: white;
   background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+  margin-top: 50px;
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -734,6 +736,9 @@ footer p {
 /*-------------------------------------------------------*/
 
 /*==============================================MEDIA QUERY=========================================*/
+
+
+
 
 @media screen and (min-width:768px) {
 
@@ -772,7 +777,7 @@ p {
 .navbar-nav > li > a {
     line-height: normal;
     color: rgb(59, 11, 48);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar-nav {
@@ -894,6 +899,11 @@ button.accordion {
     font-size: 70px;
 }
 
+.cards {
+    margin-top: 45px;
+    /* margin-bottom: 75px; */
+}
+
 .card h3 {
 
     font-size: 50px;
@@ -927,4 +937,13 @@ button.accordion {
 
 }
 
+
+@media screen and (min-width:850px) {
+    
+        .navbar
+        .navbar-nav > li > a {
+            font-size: 20px;
+        }
+    
+    }
 
