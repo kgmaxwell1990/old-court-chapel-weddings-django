@@ -271,7 +271,7 @@ hr.longer {
 }
 
 .header1 {
-    background: url("garden26-min.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -735,6 +735,19 @@ footer p {
 
 /*-------------------------------------------------------*/
 
+.header1{
+    display: none;
+}
+
+.header1mob {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+    height: 500px;
+} 
+
+
 /*==============================================MEDIA QUERY=========================================*/
 
 
@@ -891,7 +904,7 @@ button.accordion {
 
 .gal_titles > h1 {
     font-size: 30px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     letter-spacing: 5px;
 }
 
@@ -934,6 +947,19 @@ button.accordion {
 
     padding: 0;
 }
+
+.header1mob {
+    display: none;
+}
+
+ .header1 {
+    display: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    position: relative;
+    width: 100%;
+} 
 
 }
 
