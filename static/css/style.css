@@ -720,12 +720,16 @@ textarea.form-control {
 
 .footer_content {
     padding: 10px 10px 35px 10px;
+}
 
+.footer_content div h3 {
+    font-size: 30px;
 }
 
 footer p {
     margin: 0;
     font-family: Raleway, sans-serif;
+    font-size: 16px;
 }
 
 .website_info {
@@ -986,6 +990,15 @@ button.accordion {
 
 .card1 {
     margin-top: 0;
+}
+
+.footer_content div h3 {
+    font-size: 24px;
+}
+
+footer p {
+
+    font-size: 12px;
 }
 
 }
