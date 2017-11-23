@@ -133,6 +133,11 @@ hr.longer {
     padding-top: 20px;
 }
 
+.fancy_letter_heading {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 /*---------------------- hover.css --------------------*/
@@ -359,8 +364,9 @@ hr.longer {
 }
 
 .intro {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
 }
 
 .intro > p {
@@ -392,6 +398,7 @@ hr.longer {
     -o-background-size: cover; 
     padding-bottom: 50px;
     padding-top: 50px;
+    margin-top: 9px;
 }
 
 .card2 {
@@ -512,9 +519,6 @@ video {
     margin-right: 10px;
 }
 
-.titles> h1 {
-    font-size: 20px;
-}
 
 .imagegallery > a > img {
     margin-bottom: 5px;
@@ -629,7 +633,8 @@ div.panel {
 
 #map {
 	height:300px;
-	width: 100%;
+    width: 100%;
+    margin-top: 25px;
     -webkit-box-shadow:  1px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
@@ -680,7 +685,10 @@ label, input {
 .titles > h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 textarea.form-control {
@@ -689,7 +697,11 @@ textarea.form-control {
 
 .contactform {
     text-align: center;
-    padding: 30px;
+    padding: 10px 30px;
+}
+
+.sm_buttons_contact {
+    margin-bottom: 20px;
 }
 
 
@@ -744,7 +756,6 @@ footer p {
     background-size: cover;
     background-position: cover;
     width: 100%;
-    height: 500px;
 } 
 
 
@@ -944,7 +955,6 @@ button.accordion {
 }
 
 .contactform {
-
     padding: 0;
 }
 
@@ -960,6 +970,10 @@ button.accordion {
     position: relative;
     width: 100%;
 } 
+
+.card1 {
+    margin-top: 0;
+}
 
 }
 
