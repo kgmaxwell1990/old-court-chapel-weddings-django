@@ -284,7 +284,7 @@ hr.longer {
 }
 
 .header2 {
-    background: url("marquee4-min.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -294,7 +294,7 @@ hr.longer {
 }
 
 .header3 {
-    background: url("insidechapel8-min.jpg") no-repeat center fixed;
+    background: no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -314,7 +314,7 @@ hr.longer {
 }
 
 .header5 {
-    background: url("marquee3-min.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -391,10 +391,10 @@ hr.longer {
 
 
 .card1 {
-    background: url("marquee4-min.jpg") no-repeat center center fixed;
+    background: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    /* background-size: cover; */
     -o-background-size: cover; 
     padding-bottom: 50px;
     padding-top: 50px;
@@ -402,7 +402,7 @@ hr.longer {
 }
 
 .card2 {
-    background: url("insidechapel8-min.jpg") no-repeat center fixed;
+    background:  center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -412,7 +412,7 @@ hr.longer {
 }
 
 .card3 {
-    background: url("garden13-min.jpg") no-repeat center center fixed;
+    background:center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -422,7 +422,7 @@ hr.longer {
 }
 
 .card4 {
-    background: url("marquee6.jpg") no-repeat center center fixed;
+    background:center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -747,11 +747,19 @@ footer p {
 
 /*-------------------------------------------------------*/
 
-.header1{
+.header1,
+.header2,
+.header3,
+.header4,
+.header5{
     display: none;
 }
 
-.header1mob {
+.header1mob,
+.header2mob,
+.header3mob,
+.header4mob,
+.header5mob {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: cover;
@@ -868,8 +876,8 @@ button.accordion {
 }
 
 #vendorslist {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .panel {
@@ -924,7 +932,7 @@ button.accordion {
 }
 
 .cards {
-    margin-top: 45px;
+    margin-top: 29px;
     /* margin-bottom: 75px; */
 }
 
@@ -934,42 +942,47 @@ button.accordion {
 
 }
 
-.card1 {
-    padding-bottom: 150px;
-    padding-top: 150px;
-}
-
-.card2 {
-    padding-bottom: 150px;
-    padding-top: 150px;
-}
-
-.card3 {
-    padding-bottom: 150px;
-    padding-top: 150px;
-}
-
+.card1,
+.card2,
+.card3,
 .card4 {
     padding-bottom: 150px;
     padding-top: 150px;
+    background: center fixed;
+    background-size: cover;
 }
+
 
 .contactform {
     padding: 0;
 }
 
-.header1mob {
+.header1mob,
+.header2mob,
+.header3mob,
+.header4mob,
+.header4mob,
+.header5mob {
     display: none;
 }
 
- .header1 {
+ .header1,
+ .header2,
+ .header3,
+ .header4,
+ .header5 {
     display: inherit;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: cover;
     position: relative;
     width: 100%;
+    height:500px;
 } 
+
+.header1 {
+    height: 700px;
+}
 
 .card1 {
     margin-top: 0;

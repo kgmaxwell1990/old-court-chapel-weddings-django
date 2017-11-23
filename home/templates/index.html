@@ -17,7 +17,7 @@
   
 
       <div class="container-fluid">    
-            <div class="col-sm-12 intro">
+            <div class="intro">
               <p class="raleway">Old Court is a 
                 unique location for your whole wedding day.  
                 Set on the shores 
@@ -26,33 +26,33 @@
                 private estate with a 17th century 
                 Church, restored 
                 stables, a yurt-inspired Marquee and several acres of natural gardens sweeping down to the 
-                Lough Shore.</p>
-                <p class="raleway">The opportunities for fabulous photos are quite breathtaking.  
+                Lough Shore.<br><br>The opportunities for fabulous photos are quite breathtaking.  
                   The venue will be Exclusively 
                   yours, with the opportunity to Customise the space prior to the big day, if you so wish, so that you can 
                   feel completely Relaxed, 
                   with everything as you would like it, ready to enjoy a 
                   Memorable day and evening.</p>
+                  
             </div>
-            
-          <div class="row cards">
-              <hr class="style14">
-              <div class="col-md-3 card card1">
+            <hr class="style14">
+          <div class="cards">
+              
+              <div class="col-md-3 card card1" style="background-image: url('{% static 'images/marquee4-min.jpg'%}')">
                 <a href="{% url 'gallery' %}">
                 <h3>Gallery</h3>
                 </a>
               </div>
-              <div class="col-md-3 card card2">
+              <div class="col-md-3 card card2" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
                 <a href="{% url 'pricing' %}">
                 <h3>Info</h3>
                 </a>
               </div>
-              <div class="col-md-3 card card3">
+              <div class="col-md-3 card card3" style="background-image: url('{% static 'images/marquee3-min.jpg'%}')">
                 <a href="{% url 'vendors' %}">
                 <h3>Vendors</h3>
                 </a>
               </div>
-              <div class="col-md-3 card card4">
+              <div class="col-md-3 card card4" style="background-image: url('{% static 'images/garden13-min.jpg'%}')">
                 <a href="{% url 'contact' %}">
                 <h3>Contact</h3>
                 </a>
@@ -60,6 +60,4 @@
           </div>
           </div> 
     
-
-
 {% endblock content %}
