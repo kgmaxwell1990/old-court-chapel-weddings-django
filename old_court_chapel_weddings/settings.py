@@ -28,7 +28,7 @@ DEBUG = os.environ.get('DEBUG', False)
 
 
 
-ALLOWED_HOSTS = ['old-court-chapel-weddings.herokuapp.com', '127.0.0.1', 'oldcourtchapelweddings.co.uk']
+ALLOWED_HOSTS = ['old-court-chapel-weddings.herokuapp.com', '127.0.0.1', 'www.oldcourtchapelweddings.co.uk', 'www.oldcourtchapelweddings.co.uk.herokudns.com']
 INTERNAL_IPS = ['127.0.0.1']
 
 # console
