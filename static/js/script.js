@@ -56,3 +56,18 @@ $(function() {
         event.preventDefault();
     });
 });
+
+// function linkToAlcoholFunction() {
+//     // window.location.href="https://www.oldcourtchapelweddings.co.uk/vendors"
+//     window.location.href="http://127.0.0.1:8000/vendors";
+//     window.onload = function(){
+//         var ele = document.getElementById("alcohol_info");   
+//         window.scrollTo(ele.offsetLeft,ele.offsetTop);  
+//     }
+
+
+
+//  }
+
+
+

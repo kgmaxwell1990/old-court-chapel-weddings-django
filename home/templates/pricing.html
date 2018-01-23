@@ -2,6 +2,7 @@
 {% load static from staticfiles %}
 
 {% block content %}
+
 <div class="row">
         <div class="header header3" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
             <div class="brand">Info</div>
@@ -39,8 +40,16 @@
                             <li> <p> All Your Other Personal Touches </p></li>
 
                         </ul>
-                    </div>
+                </div>
             </div>
+            <p class="raleway" id="bar_info">
+                BAR INFORMATION: There is bar area at the venue with a fridge 
+                and freezer. You are not permitted to sell alcohol without 
+                a travelling liquor licence. You may either supply all the 
+                alcohol to your guests or hire a bar service with a 
+                travelling licence. Info on both of these options can be found under 'Alcohol' 
+                <a href="{% url 'vendors' %}">HERE</a>
+            </p>
             <hr class="style14">
 
             <p class="raleway">Are you staying in the 

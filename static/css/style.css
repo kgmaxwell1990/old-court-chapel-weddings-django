@@ -875,6 +875,10 @@ margin: 0;
     margin: 0;
 }
 
+#bar_info {
+    font-size: 16px;
+}
+
 button.accordion {
     font-size: 50px;
 }
