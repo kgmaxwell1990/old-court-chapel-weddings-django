@@ -1,3 +1,6 @@
+import os
+import json
+import urllib
 from django.conf import settings
 from django.shortcuts import redirect, render, get_object_or_404
 from django.core.mail import EmailMessage, send_mail
@@ -28,6 +31,20 @@ def contact(request):
         form = form_class(data=request.POST)
 
         if form.is_valid():
+
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': os.environ.get('GOOGLE_RECAPTCHA_SECRET_KEY'),
+                'response': recaptcha_response
+            }
+            data = urllib.parse.urlencode(values).encode()
+            req =  urllib.request.Request(url, data=data)
+            response = urllib.request.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
+
             contact_name = request.POST.get('contact_name', '')
             contact_email = request.POST.get('contact_email', '')
             form_content = request.POST.get('content', '')

@@ -38,12 +38,13 @@
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 titles">
+        <div class="col-lg-6 col-md-6 col-sm-12 titles textcentre">
           <h1 class="raleway">...<span class="greatvibes caps pink gallerycaps">O</span>r Fill out this form</h1>
           <div class="contactform">
           <form role="form" action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
+                <p class="g-recaptcha" data-sitekey="6LfejnsUAAAAALPzhHRAvS-5OhyDmgN4LggqplGM"></p>
                 <button class="btn btn-success hvr-grow" type="submit">Submit</button>
             </form>
           </div>
