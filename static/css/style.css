@@ -704,6 +704,10 @@ textarea.form-control {
     margin-bottom: 20px;
 }
 
+.btn-success[disabled]:hover {
+    border: none;
+    background-color: gray;
+}
 
 /*-------------------------------------------------------*/
 /*------------------------footer CSS---------------------*/

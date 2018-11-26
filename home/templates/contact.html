@@ -44,8 +44,8 @@
           <form role="form" action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
-                <p class="g-recaptcha" data-sitekey="6LfejnsUAAAAALPzhHRAvS-5OhyDmgN4LggqplGM"></p>
-                <button class="btn btn-success hvr-grow" type="submit">Submit</button>
+                <p class="g-recaptcha" data-sitekey="6LfejnsUAAAAALPzhHRAvS-5OhyDmgN4LggqplGM" data-callback="recaptcha_callback"></p>
+                <button id="submit_btn" class="btn btn-success hvr-grow" type="submit" disabled >Submit</button>
             </form>
           </div>
         </div>
@@ -53,9 +53,5 @@
   
     
 </div>
-
-
-
-
 
 {% endblock content %}
