@@ -548,7 +548,7 @@ video {
 
 
 /*-------------------------------------------------------*/
-/*--------------------pricing.html CSS-------------------*/
+/*--------------------info.html CSS-------------------*/
 
 .days_leading_up {
     font-size: 15px;
@@ -639,7 +639,6 @@ div.panel {
     -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
 }
-
 
 fieldset {
 	padding: 20px;
