@@ -17,32 +17,12 @@
 
     <div class="gal_menu">
         <ul>
-            {% comment %} <li><a href="#vid_section" class="page-scroll">Video</a></li> {% endcomment %}
             <li><a href="#chapel_section" class="page-scroll">Chapel</a></li>
             <li><a href="#reception_section" class="page-scroll">Reception</a></li>
+            <li><a href="#boathouse_section" class="page-scroll">Boathouse</a></li>
             <li><a href="#garden_section" class="page-scroll">Gardens</a></li>
         </ul>
     </div>
-
-    {% comment %} <section id="vid_section">
-    <div class="gal_video">
-        <div id="video">  
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
-            <source src="https://www.youtube.com/watch?v=d160c59RlRw#t=10,15" type="video/mp4"></source>
-        </video> 
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
-            <source src="static/video/video.mp4#t=10,15" type="video/mp4"></source>
-        </video>
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
-            <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
-        </video> 
-        <video preload="preload"  id="video" autoplay="autoplay" loop="loop" muted controls="controls">
-            <source src="{% static "video/video.mp4" %}" type="video/mp4"></source>
-        </video> 
-        <p> Footage credit - Ross James</p>
-        </div>
-    </div>
-    </section> {% endcomment %}
 
     <section id="chapel_section">  
     <div class="gal_chapel">
@@ -88,6 +68,21 @@
           <a data-fancybox="gallery" href="{% static 'images/marquee4-min.jpg' %}"><img src="{% static 'images/marquee4-min.jpg' %}" width="300px" height="210px"></a></br>
           <!-- portrait photos -->
           {% comment %} <a data-fancybox="gallery" href="{% static 'images/marquee5-min.jpg' %}"><img src="{% static 'images/marquee5-min.jpg' %}" width="300px" height="400px"></a> {% endcomment %}
+      </div>
+    </div>
+    </section>
+
+    <section id="boathouse_section">
+    <div class="gal_boathouse">
+      <div class=" imagegallery textcentre titles gal_titles">
+          <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">B</span>oathouse</h1>
+          <!-- landscape photos -->
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-7.jpg' %}"><img src="{% static 'images/old-court-boathouse-7.jpg' %}" width="300px" height="210px"></a>
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-10.jpg' %}"><img src="{% static 'images/old-court-boathouse-10.jpg' %}" width="300px" height="210px"></a>
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-13.jpg' %}"><img src="{% static 'images/old-court-boathouse-13.jpg' %}" width="300px" height="210px"></a>
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-18.jpg' %}"><img src="{% static 'images/old-court-boathouse-18.jpg' %}" width="300px" height="210px"></a>
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-24.jpg' %}"><img src="{% static 'images/old-court-boathouse-24.jpg' %}" width="300px" height="210px"></a>
+          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-63.jpg' %}"><img src="{% static 'images/old-court-boathouse-63.jpg' %}" width="300px" height="210px"></a></br>
       </div>
     </div>
     </section>
