@@ -1,63 +1,56 @@
-{% extends 'base.html' %}
-{% load static from staticfiles %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% block content %}
 <div class="row">
-<div class="header header1" style="background-image: url('{% static 'images/garden26-min.jpg'%}')">
-        <div class="brand">Old Court <br> Wedding Company</div>
-        <div class="address-bar">Strangford<br> County Down<br> Northern Ireland</div>
-        {% comment %} <a href="#mainindexsection" class="page-scroll"><img src="{% static 'images/downarrow.png' %}" alt="Down Arrow" width="70px" id="downarrow" class="hvr-pulse"/></a> {% endcomment %}
+    <div class="header header1" style="background-image: url('{% static 'images/garden26-min.jpg'%}')">
+        <div class="brand">Old Court
+            <br> Wedding Company</div>
+        <div class="address-bar">Strangford
+            <br> County Down
+            <br> Northern Ireland</div>
+        {% comment %}
+        <a href="#mainindexsection" class="page-scroll"><img src="{% static 'images/downarrow.png' %}" alt="Down Arrow" width="70px" id="downarrow" class="hvr-pulse" /></a> {% endcomment %}
+    </div>
+    <div class="header header1mob" style="background-image: url('{% static 'images/garden26-min-mob.jpg'%}')">
+        <div class="brand">Old Court
+            <br> Wedding Company</div>
+        <div class="address-bar">Strangford
+            <br> County Down
+            <br> Northern Ireland</div>
+        {% comment %}
+        <a href="#mainindexsection" class="page-scroll"><img src="{% static 'images/downarrow.png' %}" alt="Down Arrow" width="70px" id="downarrow" class="hvr-pulse" /></a> {% endcomment %}
+    </div>
 </div>
-<div class="header header1mob" style="background-image: url('{% static 'images/garden26-min-mob.jpg'%}')">
-  <div class="brand">Old Court <br> Wedding Company</div>
-  <div class="address-bar">Strangford<br> County Down<br> Northern Ireland</div>
-  {% comment %} <a href="#mainindexsection" class="page-scroll"><img src="{% static 'images/downarrow.png' %}" alt="Down Arrow" width="70px" id="downarrow" class="hvr-pulse"/></a> {% endcomment %}
-</div>
-</div> 
-  
 
-      <div class="container-fluid">    
-            <div class="intro">
-              <p class="raleway">Old Court is a 
-                unique location for your whole wedding day.  
-                Set on the shores 
-                of Strangford 
-                Lough in a 
-                private estate with a 17th century 
-                Church, restored 
-                stables, a yurt-inspired Marquee and several acres of natural gardens sweeping down to the 
-                Lough Shore.<br><br>The opportunities for fabulous photos are quite breathtaking.  
-                  The venue will be Exclusively 
-                  yours, with the opportunity to Customise the space prior to the big day, if you so wish, so that you can 
-                  feel completely Relaxed, 
-                  with everything as you would like it, ready to enjoy a 
-                  Memorable day and evening.</p>
-                  
-            </div>
-            <hr class="style14">
-          <div class="cards">
-              
-              <div class="col-md-3 card card1" style="background-image: url('{% static 'images/marquee4-min.jpg'%}')">
-                <a href="{% url 'gallery' %}">
+<div class="container-fluid">
+    <div class="intro">
+        <p class="raleway">Old Court is a unique location for your whole wedding day. Set on the shores of Strangford Lough in a private estate with a 17th century Church, restored stables, a yurt-inspired Marquee and several acres of natural gardens sweeping down to the Lough Shore.
+            <br>
+            <br>The opportunities for fabulous photos are quite breathtaking. The venue will be Exclusively yours, with the opportunity to Customise the space prior to the big day, if you so wish, so that you can feel completely Relaxed, with everything as you would like it, ready to enjoy a Memorable day and evening.</p>
+
+    </div>
+    <hr class="style14">
+    <div class="cards">
+
+        <div class="col-md-3 card card1" style="background-image: url('{% static 'images/marquee4-min.jpg'%}')">
+            <a href="{% url 'gallery' %}">
                 <h3>Gallery</h3>
-                </a>
-              </div>
-              <div class="col-md-3 card card2" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
-                <a href="{% url 'info' %}">
+            </a>
+        </div>
+        <div class="col-md-3 card card2" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
+            <a href="{% url 'info' %}">
                 <h3>Info</h3>
-                </a>
-              </div>
-              <div class="col-md-3 card card3" style="background-image: url('{% static 'images/marquee3-min.jpg'%}')">
-                <a href="{% url 'vendors' %}">
+            </a>
+        </div>
+        <div class="col-md-3 card card3" style="background-image: url('{% static 'images/marquee3-min.jpg'%}')">
+            <a href="{% url 'vendors' %}">
                 <h3>Vendors</h3>
-                </a>
-              </div>
-              <div class="col-md-3 card card4" style="background-image: url('{% static 'images/garden13-min.jpg'%}')">
-                <a href="{% url 'contact' %}">
+            </a>
+        </div>
+        <div class="col-md-3 card card4" style="background-image: url('{% static 'images/garden13-min.jpg'%}')">
+            <a href="{% url 'contact' %}">
                 <h3>Contact</h3>
-                </a>
-              </div>
-          </div>
-          </div> 
-    
+            </a>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

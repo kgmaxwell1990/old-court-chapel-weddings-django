@@ -1,48 +1,52 @@
-{% extends 'base.html' %}
-{% load static from staticfiles %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% block content %}
 <div class="row">
     <div class="header header5" style="background-image: url('{% static 'images/garden13-min.jpg'%}')">
-      <div class="brand">Contact</div>
-  </div> 
-  <div class="header header5mob" style="background-image: url('{% static 'images/garden29-min-mob.jpg'%}')">
-      <div class="brand">Contact</div>
-  </div> 
-</div>
-    
-      
-<div class="container-fluid titles">
-  <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">V</span>iewings are by Appointment Only</h1>
-  <div class="row nolrmargin">
-      <div class="col-sm-12">
-        <div id="map">
-          <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=old%20court%20chapel&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-        </div>
-      </div>
-  </div>
-  <div class="row contact_page_details">    
-    <div class="col-sm-12 textcentre titles">
-      <h1 class="raleway"> <span class="greatvibes caps pink gallerycaps">C</span>ontact Us here... </h1>
-      <div class="col-sm-3">
-        <h3>Address</h3><p> Old Court Wedding Company <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB <br> </p>
-      </div>
-      <div class="col-sm-3">
-        <h3>Phone Us</h3><p><a href="tel:00442844881318"> Home: (+44)2844881318 </a><br> <a href="tel:00447783345130"> Mobile: (+44)7783345130 </a></p>
-      </div>
-      <div class="col-sm-3">
-        <h3>Email Us</h3><a href="mailto:sian@oldcourtweddingcompany.com"> sian@oldcourtweddingcompany.com</a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Connect With Us </h3> 
-        <div class="sm_buttons_contact">
-        <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px"/></a>
-        <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px"/></a>
-        <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px"/></a>
-        </div>
-      </div>
+        <div class="brand">Contact</div>
     </div>
-  </div>
+    <div class="header header5mob" style="background-image: url('{% static 'images/garden29-min-mob.jpg'%}')">
+        <div class="brand">Contact</div>
+    </div>
+</div>
+
+<div class="container-fluid titles">
+    <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">V</span>iewings are by Appointment Only</h1>
+    <div class="row nolrmargin">
+        <div class="col-sm-12">
+            <div id="map">
+                <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=old%20court%20chapel&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row contact_page_details">
+        <div class="col-sm-12 textcentre titles">
+            <h1 class="raleway"> <span class="greatvibes caps pink gallerycaps">C</span>ontact Us here... </h1>
+            <div class="col-sm-3">
+                <h3>Address</h3>
+                <p> Old Court Wedding Company
+                    <br> Strangford
+                    <br> Co. Down
+                    <br> Northern Ireland
+                    <br> BT30 7NB
+                    <br> </p>
+            </div>
+            <div class="col-sm-3">
+                <h3>Phone Us</h3>
+                <p><a href="tel:00442844881318"> Home: (+44)2844881318 </a>
+                    <br> <a href="tel:00447783345130"> Mobile: (+44)7783345130 </a></p>
+            </div>
+            <div class="col-sm-3">
+                <h3>Email Us</h3><a href="mailto:sian@oldcourtweddingcompany.com"> sian@oldcourtweddingcompany.com</a>
+            </div>
+            <div class="col-sm-3">
+                <h3>Connect With Us </h3>
+                <div class="sm_buttons_contact">
+                    <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="{% static 'images/Facebook.png' %}" width="35px" /></a>
+                    <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="{% static 'images/Twitter.png' %}" width="35px" /></a>
+                    <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="{% static 'images/Instagram.png' %}" width="35px" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock content %}

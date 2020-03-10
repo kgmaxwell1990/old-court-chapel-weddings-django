@@ -1,70 +1,72 @@
-{% extends 'base.html' %}
-{% load static from staticfiles %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% block content %}
 
 <div class="row">
-        <div class="header header3" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
-            <div class="brand">Info</div>
-        </div> 
-        <div class="header header3mob" style="background-image: url('{% static 'images/insidechapel8-min-mob.jpg'%}')">
-            <div class="brand">Info</div>
-        </div> 
+    <div class="header header3" style="background-image: url('{% static 'images/insidechapel8-min.jpg'%}')">
+        <div class="brand">Info</div>
+    </div>
+    <div class="header header3mob" style="background-image: url('{% static 'images/insidechapel8-min-mob.jpg'%}')">
+        <div class="brand">Info</div>
+    </div>
 </div>
-      
-      
-      <div class="intro">
-        <p class="raleway">The complete venue  is available to hire at a total cost of £5500<br>
-         Capactiy is 120 <br>
-         Exclusively yours for the day <br>
-         <span class="days_leading_up">(You can also have the days leading up to your Wedding to set it up just the way you like it!)</span>
 
-        </p>
+<div class="intro">
+    <p class="raleway">The complete venue is available to hire at a total cost of £5500
+        <br> Capactiy is 120 day & night
+        <br> Exclusively yours for the day
+        <br>
+        <span class="days_leading_up">(You can also have the days leading up to your Wedding to set it up just the way you like it!)</span>
 
-            <div class="row">
-                <div class="col-md-6 included_titles">
-                    <h2> What's included?</h2>
-                    <ul>
-                        <li> <p> Chapel &amp; Venue Hire</p></li>
-                        <li> <p> One night stay in the boathouse</p></li>
-                        <li> <p> Full Use Of The Grounds</p></li>
-                        <li> <p> Indoor &amp; Outdoor Tables &amp; Chairs</p></li>
+    </p>
 
-                    </ul>
-                </div>
-                <div class="col-md-6 included_titles">
-                        <h2> What's not included?</h2>
-                        <ul>
-                            <li> <p> Catering</p></li>
-                            <li> <p> Decorations</p></li>
-                            <li> <p> Table Linen &amp; everything on top </p></li>
-                            <li> <p> All Your Other Personal Touches </p></li>
+    <div class="row">
+        <div class="col-md-6 included_titles">
+            <h2> What's included?</h2>
+            <ul>
+                <li>
+                    <p> Chapel &amp; Venue Hire</p>
+                </li>
+                <li>
+                    <p> One night stay in the boathouse</p>
+                </li>
+                <li>
+                    <p> Full Use Of The Grounds</p>
+                </li>
+                <li>
+                    <p> Indoor &amp; Outdoor Tables &amp; Chairs</p>
+                </li>
 
-                        </ul>
-                </div>
-            </div>
-            <p class="raleway" id="bar_info">
-                BAR INFORMATION: There is bar area at the venue with a fridge 
-                and freezer. You are not permitted to sell alcohol without 
-                a travelling liquor licence. You may either supply all the 
-                alcohol to your guests or hire a bar service with a 
-                travelling licence. Info on both of these options can be found under 'Alcohol' 
-                <a href="{% url 'vendors' %}">HERE</a>
-            </p>
-            <hr class="style14">
-
-            <p class="raleway">Are you staying in the 
-                Village?<br>
-                Check out <a class="hvr-grow" href="#" data-toggle="modal" data-target="#thingsModal">these</a> things to do during your stay
-
-            </p>
-
-
+            </ul>
         </div>
+        <div class="col-md-6 included_titles">
+            <h2> What's not included?</h2>
+            <ul>
+                <li>
+                    <p> Catering</p>
+                </li>
+                <li>
+                    <p> Decorations</p>
+                </li>
+                <li>
+                    <p> Table Linen &amp; everything on top </p>
+                </li>
+                <li>
+                    <p> All Your Other Personal Touches </p>
+                </li>
 
+            </ul>
+        </div>
+    </div>
+    <p class="raleway" id="bar_info">
+        BAR INFORMATION: There is bar area at the venue with a fridge and freezer. You are not permitted to sell alcohol without a travelling liquor licence. You may either supply all the alcohol to your guests or hire a bar service with a travelling licence. Info on both of these options can be found under 'Alcohol'
+        <a href="{% url 'vendors' %}">HERE</a>
+    </p>
+    <hr class="style14">
 
+    <p class="raleway">Are you staying in the Village?
+        <br> Check out <a class="hvr-grow" href="#" data-toggle="modal" data-target="#thingsModal">these</a> things to do during your stay
 
+    </p>
 
-
+</div>
 
 {% endblock content %}

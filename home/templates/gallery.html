@@ -1,18 +1,14 @@
-{% extends 'base.html' %}
-{% load static from staticfiles %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% block content %}
 <div class="row">
     <div class="header header2" style="background-image: url('{% static 'images/marquee4-min.jpg'%}')">
         <div class="brand">Gallery</div>
-    </div> 
+    </div>
     <div class="header header2mob" style="background-image: url('{% static 'images/quay1-min-mob.jpg'%}')">
         <div class="brand">Gallery</div>
-    </div> 
+    </div>
 </div>
 
-      
-      <hr class="style14">
+<hr class="style14">
 <div class="gal">
 
     <div class="gal_menu">
@@ -24,101 +20,106 @@
         </ul>
     </div>
 
-    <section id="chapel_section">  
-    <div class="gal_chapel">
-      <div class="imagegallery textcentre titles gal_titles">
-          <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
-          <!-- landscape photos -->
-          <a data-fancybox="gallery" href="{% static 'images/chapel1-min.jpg' %}"><img src="{% static 'images/chapel1-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/insidechapel2-min.jpg' %}"><img src="{% static 'images/insidechapel2-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel3-min.jpg' %}"><img src="{% static 'images/chapel3-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel4-min.jpg' %}"><img src="{% static 'images/chapel4-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/insidechapel5-min.jpg' %}"><img src="{% static 'images/insidechapel5-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel6-min.jpg' %}"><img src="{% static 'images/chapel6-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel7-min.jpg' %}"><img src="{% static 'images/chapel7-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/insidechapel8-min.jpg' %}"><img src="{% static 'images/insidechapel8-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel9-min.jpg' %}"><img src="{% static 'images/chapel9-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel10-min.jpg' %}"><img src="{% static 'images/chapel10-min.jpg' %}" width="300px" height="210px"></a></br>
-          <!-- portrait photos -->
-          <a data-fancybox="gallery" href="{% static 'images/insidechapel6-min.jpg' %}"><img src="{% static 'images/insidechapel6-min.jpg' %}" width="300px" height="400px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/chapel8-min.jpg' %}"><img src="{% static 'images/chapel8-min.jpg' %}" width="300px" height="400px"></a>
-      </div>
-    </div>
+    <section id="chapel_section">
+        <div class="gal_chapel">
+            <div class="imagegallery textcentre titles gal_titles">
+                <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
+                <!-- landscape photos -->
+                <a data-fancybox="gallery" href="{% static 'images/chapel1-min.jpg' %}"><img src="{% static 'images/chapel1-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/insidechapel2-min.jpg' %}"><img src="{% static 'images/insidechapel2-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel3-min.jpg' %}"><img src="{% static 'images/chapel3-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel4-min.jpg' %}"><img src="{% static 'images/chapel4-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/insidechapel5-min.jpg' %}"><img src="{% static 'images/insidechapel5-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel6-min.jpg' %}"><img src="{% static 'images/chapel6-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel7-min.jpg' %}"><img src="{% static 'images/chapel7-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/insidechapel8-min.jpg' %}"><img src="{% static 'images/insidechapel8-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel9-min.jpg' %}"><img src="{% static 'images/chapel9-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel10-min.jpg' %}"><img src="{% static 'images/chapel10-min.jpg' %}" width="300px" height="210px"></a>
+                </br>
+                <!-- portrait photos -->
+                <a data-fancybox="gallery" href="{% static 'images/insidechapel6-min.jpg' %}"><img src="{% static 'images/insidechapel6-min.jpg' %}" width="300px" height="400px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/chapel8-min.jpg' %}"><img src="{% static 'images/chapel8-min.jpg' %}" width="300px" height="400px"></a>
+            </div>
+        </div>
     </section>
-    
+
     <section id="reception_section">
-    <div class="gal_reception">
-      <div class=" imagegallery textcentre titles gal_titles">
-          <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
-          <!-- landscape photos -->
-          <a data-fancybox="gallery" href="{% static 'images/marquee8-min.jpg' %}"><img src="{% static 'images/marquee8-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn8-min.jpg' %}"><img src="{% static 'images/barn8-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn1-min.jpg' %}"><img src="{% static 'images/barn1-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee2-min.jpg' %}"><img src="{% static 'images/marquee2-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn7-min.jpg' %}"><img src="{% static 'images/barn7-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee9-min.jpg' %}"><img src="{% static 'images/marquee9-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn2-min.jpg' %}"><img src="{% static 'images/barn2-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn6-min.jpg' %}"><img src="{% static 'images/barn6-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee3-min.jpg' %}"><img src="{% static 'images/marquee3-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee6-min.jpg' %}"><img src="{% static 'images/marquee6-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn3-min.jpg' %}"><img src="{% static 'images/barn3-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn4-min.jpg' %}"><img src="{% static 'images/barn4-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee12-min.jpg' %}"><img src="{% static 'images/marquee12-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/barn5-min.jpg' %}"><img src="{% static 'images/barn5-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/marquee4-min.jpg' %}"><img src="{% static 'images/marquee4-min.jpg' %}" width="300px" height="210px"></a></br>
-          <!-- portrait photos -->
-          {% comment %} <a data-fancybox="gallery" href="{% static 'images/marquee5-min.jpg' %}"><img src="{% static 'images/marquee5-min.jpg' %}" width="300px" height="400px"></a> {% endcomment %}
-      </div>
-    </div>
+        <div class="gal_reception">
+            <div class=" imagegallery textcentre titles gal_titles">
+                <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
+                <!-- landscape photos -->
+                <a data-fancybox="gallery" href="{% static 'images/marquee8-min.jpg' %}"><img src="{% static 'images/marquee8-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn8-min.jpg' %}"><img src="{% static 'images/barn8-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn1-min.jpg' %}"><img src="{% static 'images/barn1-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee2-min.jpg' %}"><img src="{% static 'images/marquee2-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn7-min.jpg' %}"><img src="{% static 'images/barn7-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee9-min.jpg' %}"><img src="{% static 'images/marquee9-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn2-min.jpg' %}"><img src="{% static 'images/barn2-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn6-min.jpg' %}"><img src="{% static 'images/barn6-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee3-min.jpg' %}"><img src="{% static 'images/marquee3-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee6-min.jpg' %}"><img src="{% static 'images/marquee6-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn3-min.jpg' %}"><img src="{% static 'images/barn3-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn4-min.jpg' %}"><img src="{% static 'images/barn4-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee12-min.jpg' %}"><img src="{% static 'images/marquee12-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/barn5-min.jpg' %}"><img src="{% static 'images/barn5-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/marquee4-min.jpg' %}"><img src="{% static 'images/marquee4-min.jpg' %}" width="300px" height="210px"></a>
+                </br>
+                <!-- portrait photos -->
+                {% comment %}
+                <a data-fancybox="gallery" href="{% static 'images/marquee5-min.jpg' %}"><img src="{% static 'images/marquee5-min.jpg' %}" width="300px" height="400px"></a> {% endcomment %}
+            </div>
+        </div>
     </section>
 
     <section id="boathouse_section">
-    <div class="gal_boathouse">
-      <div class=" imagegallery textcentre titles gal_titles">
-          <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">B</span>oathouse</h1>
-          <!-- landscape photos -->
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-7.jpg' %}"><img src="{% static 'images/old-court-boathouse-7.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-10.jpg' %}"><img src="{% static 'images/old-court-boathouse-10.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-13.jpg' %}"><img src="{% static 'images/old-court-boathouse-13.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-17.jpg' %}"><img src="{% static 'images/old-court-boathouse-17.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-59.jpg' %}"><img src="{% static 'images/old-court-boathouse-59.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-64.jpg' %}"><img src="{% static 'images/old-court-boathouse-64.jpg' %}" width="300px" height="210px"></a></br>
-      </div>
-    </div>
+        <div class="gal_boathouse">
+            <div class=" imagegallery textcentre titles gal_titles">
+                <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">B</span>oathouse</h1>
+                <!-- landscape photos -->
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-7.jpg' %}"><img src="{% static 'images/old-court-boathouse-7.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-10.jpg' %}"><img src="{% static 'images/old-court-boathouse-10.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-13.jpg' %}"><img src="{% static 'images/old-court-boathouse-13.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-17.jpg' %}"><img src="{% static 'images/old-court-boathouse-17.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-59.jpg' %}"><img src="{% static 'images/old-court-boathouse-59.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/old-court-boathouse-64.jpg' %}"><img src="{% static 'images/old-court-boathouse-64.jpg' %}" width="300px" height="210px"></a>
+                </br>
+            </div>
+        </div>
     </section>
 
     <section id="garden_section">
-    <div class="gal_gardens">
-      <div class=" imagegallery textcentre titles gal_titles">
-          <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
-          <!-- landscape photos -->
-          <a data-fancybox="gallery" href="{% static 'images/boathouse1-min.jpg' %}"><img src="{% static 'images/boathouse1-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/quay1-min.jpg' %}"><img src="{% static 'images/quay1-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/boathouse3-min.jpg' %}"><img src="{% static 'images/boathouse3-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/boathouse4-min.jpg' %}"><img src="{% static 'images/boathouse4-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/boathouse5-min.jpg' %}"><img src="{% static 'images/boathouse5-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden11-min.jpg' %}"><img src="{% static 'images/garden11-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden12-min.jpg' %}"><img src="{% static 'images/garden12-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden13-min.jpg' %}"><img src="{% static 'images/garden13-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden17-min.jpg' %}"><img src="{% static 'images/garden17-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden19-min.jpg' %}"><img src="{% static 'images/garden19-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden20-min.jpg' %}"><img src="{% static 'images/garden20-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden22-min.jpg' %}"><img src="{% static 'images/garden22-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden23-min.jpg' %}"><img src="{% static 'images/garden23-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden31-min.jpg' %}"><img src="{% static 'images/garden31-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden25-min.jpg' %}"><img src="{% static 'images/garden25-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden26-min.jpg' %}"><img src="{% static 'images/garden26-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden27-min.jpg' %}"><img src="{% static 'images/garden27-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden28-min.jpg' %}"><img src="{% static 'images/garden28-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden29-min.jpg' %}"><img src="{% static 'images/garden29-min.jpg' %}" width="300px" height="210px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden30-min.jpg' %}"><img src="{% static 'images/garden30-min.jpg' %}" width="300px" height="210px"></a><br>
-          <!-- portrait photos -->
-          <a data-fancybox="gallery" href="{% static 'images/boathouse2-min.jpg' %}"><img src="{% static 'images/boathouse2-min.jpg' %}" width="300px" height="400px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden18-min.jpg' %}"><img src="{% static 'images/garden18-min.jpg' %}" width="300px" height="400px"></a>
-          <a data-fancybox="gallery" href="{% static 'images/garden21-min.jpg' %}"><img src="{% static 'images/garden21-min.jpg' %}" width="300px" height="400px"></a>
-      </div>
-    </div>
+        <div class="gal_gardens">
+            <div class=" imagegallery textcentre titles gal_titles">
+                <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
+                <!-- landscape photos -->
+                <a data-fancybox="gallery" href="{% static 'images/boathouse1-min.jpg' %}"><img src="{% static 'images/boathouse1-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/quay1-min.jpg' %}"><img src="{% static 'images/quay1-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/boathouse3-min.jpg' %}"><img src="{% static 'images/boathouse3-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/boathouse4-min.jpg' %}"><img src="{% static 'images/boathouse4-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/boathouse5-min.jpg' %}"><img src="{% static 'images/boathouse5-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden11-min.jpg' %}"><img src="{% static 'images/garden11-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden12-min.jpg' %}"><img src="{% static 'images/garden12-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden13-min.jpg' %}"><img src="{% static 'images/garden13-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden17-min.jpg' %}"><img src="{% static 'images/garden17-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden19-min.jpg' %}"><img src="{% static 'images/garden19-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden20-min.jpg' %}"><img src="{% static 'images/garden20-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden22-min.jpg' %}"><img src="{% static 'images/garden22-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden23-min.jpg' %}"><img src="{% static 'images/garden23-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden31-min.jpg' %}"><img src="{% static 'images/garden31-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden25-min.jpg' %}"><img src="{% static 'images/garden25-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden26-min.jpg' %}"><img src="{% static 'images/garden26-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden27-min.jpg' %}"><img src="{% static 'images/garden27-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden28-min.jpg' %}"><img src="{% static 'images/garden28-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden29-min.jpg' %}"><img src="{% static 'images/garden29-min.jpg' %}" width="300px" height="210px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden30-min.jpg' %}"><img src="{% static 'images/garden30-min.jpg' %}" width="300px" height="210px"></a>
+                <br>
+                <!-- portrait photos -->
+                <a data-fancybox="gallery" href="{% static 'images/boathouse2-min.jpg' %}"><img src="{% static 'images/boathouse2-min.jpg' %}" width="300px" height="400px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden18-min.jpg' %}"><img src="{% static 'images/garden18-min.jpg' %}" width="300px" height="400px"></a>
+                <a data-fancybox="gallery" href="{% static 'images/garden21-min.jpg' %}"><img src="{% static 'images/garden21-min.jpg' %}" width="300px" height="400px"></a>
+            </div>
+        </div>
     </section>
 </div>
 
-      {% endblock content %}
+{% endblock content %}

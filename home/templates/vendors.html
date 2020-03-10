@@ -1,856 +1,872 @@
-{% extends 'base.html' %}
-{% load static from staticfiles %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% block content %}
 
 <div id="barModal" class="modal fade" role="dialog">
-  <div class="modal-dialog" style="height: 90vh">
+    <div class="modal-dialog" style="height: 90vh">
 
-      <div class="modal-content" style="height:100%">
-      <div class="modal-body" style="height:100%">
-          <iframe src="{% static 'pdfs/njb_full_bar_service.pdf' %}" style="height:100%;width:100%;"></iframe>
-      </div>
-  
-      </div>
-  </div>
+        <div class="modal-content" style="height:100%">
+            <div class="modal-body" style="height:100%">
+                <iframe src="{% static 'pdfs/njb_full_bar_service.pdf' %}" style="height:100%;width:100%;"></iframe>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div id="foodModal" class="modal fade" role="dialog">
-  <div class="modal-dialog" style="height: 90vh">
+    <div class="modal-dialog" style="height: 90vh">
 
-      <div class="modal-content" style="height:100%">
-      <div class="modal-body" style="height:100%">
-          <iframe src="{% static 'pdfs/njb_food_brochure.pdf' %}" style="height:100%;width:100%;"></iframe>
-      </div>
-  
-      </div>
-  </div>
+        <div class="modal-content" style="height:100%">
+            <div class="modal-body" style="height:100%">
+                <iframe src="{% static 'pdfs/njb_food_brochure.pdf' %}" style="height:100%;width:100%;"></iframe>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="row">
     <div class="header header4" style="background-image: url('{% static 'images/marquee3-min.jpg'%}')">
-      <div class="brand">Vendors</div>
-  </div> 
-  <div class="header header4mob" style="background-image: url('{% static 'images/insidechapel6-min-mob.jpg'%}')">
-      <div class="brand">Vendors</div>
-  </div> 
+        <div class="brand">Vendors</div>
+    </div>
+    <div class="header header4mob" style="background-image: url('{% static 'images/insidechapel6-min-mob.jpg'%}')">
+        <div class="brand">Vendors</div>
+    </div>
 </div>
-            
-      
-      <div class="row">
-        <div class="col-sm-12 intro">
-          <p class="raleway">Choose whoever you Wish to look after you on your Special day but here are some Ideas if you are stuck!</p>
-        </div>
-      </div> 
-      
-      <div id="vendorslist">
-        <button class="accordion">Catering</button>
-        <div class="panel">
-            <div class="row">
 
-              <div class="col-md-4">
-                    <h3 class="raleway">The Yellow Door</h3>
-        
-                    <p>427 Lisburn Road<br>
-                        Belfast<br>
-                        BT9 7EY
-                    </p>
-        
-                    <p><a href="http://www.yellowdoordeli.co.uk" target="_blank">www.yellowdoordeli.co.uk</a></p>
-                  </div>
+<div class="row">
+    <div class="col-sm-12 intro">
+        <p class="raleway">Choose whoever you Wish to look after you on your Special day but here are some Ideas if you are stuck!</p>
+    </div>
+</div>
 
-                  <div class="col-md-4">
-                  <h3 class="raleway">Jane's Kitchen</h3>
-      
-                  <p>15 Main Street<br>
-                      Broughshane<br>
-                      Ballymena<br>
-                      BT42 4JW
-                  </p>
-      
-                  <p><a href="http://www.janes-kitchen.com" target="_blank">www.janes-kitchen.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">Posh Nosh</h3>
-        
-                    <p>Balloo Way<br>
-                        Bangor<br>
-                        BT19 7QT
-                    </p>
-        
-                    <p><a href="http://www.poshnoshireland.com" target="_blank">www.poshnoshireland.com</a></p>
-                  </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                    <h3 class="raleway">Ivy Catering</h3>
-        
-                    <p>37 Killyleagh Road<br>
-                      Downpatrick <br>
-                      BT30 9BL
-                    </p>
-        
-                    <p><a href="http://www.ivycatering.com" target="_blank">www.ivycatering.com</a></p>
-                </div>
-      
-                <div class="col-md-4">
-                    <h3 class="raleway">French Village</h3>
-        
-                    <p>Unit 32<br>
-                      Montgomery Road <br>
-                      Belfast <br>
-                      BT6 9HL
-                    </p>
-        
-                    <p><a href="http://www.frenchvillagecatering.co.uk/" target="_blank">www.frenchvillagecatering.co.uk</a></p>
-                </div>
+<div id="vendorslist">
+    <button class="accordion">Catering</button>
+    <div class="panel">
+        <div class="row">
 
-                <div class="col-md-4">
-                  <h3 class="raleway">Foodie Folk</h3>
-      
-                  <p>121 Gilnahirk Road<br>
-                    Belfast <br>
-                    BT5 7QL
-                  </p>
-      
-                  <p><a href="http://www.foodiefolk.co.uk" target="_blank">www.foodiefolk.co.uk</a></p>
-              </div>
-                
-            </div>
-          <div class="row">
             <div class="col-md-4">
-                  <h3 class="raleway">The Artisan Cookhouse</h3>
-                  <p>4 Kildare Street<br>
-                    Strangford<br>
-                    BT30 7LJ
-                  </p>
-                  <p><a href="https://www.artisancookhouse.com/" target="_blank">www.artisancookhouse.com</a></p>
-              </div>
-    
-              <div class="col-md-4">
+                <h3 class="raleway">The Yellow Door</h3>
+
+                <p>427 Lisburn Road
+                    <br> Belfast
+                    <br> BT9 7EY
+                </p>
+
+                <p><a href="http://www.yellowdoordeli.co.uk" target="_blank">www.yellowdoordeli.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Jane's Kitchen</h3>
+
+                <p>15 Main Street
+                    <br> Broughshane
+                    <br> Ballymena
+                    <br> BT42 4JW
+                </p>
+
+                <p><a href="http://www.janes-kitchen.com" target="_blank">www.janes-kitchen.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Posh Nosh</h3>
+
+                <p>Balloo Way
+                    <br> Bangor
+                    <br> BT19 7QT
+                </p>
+
+                <p><a href="http://www.poshnoshireland.com" target="_blank">www.poshnoshireland.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Ivy Catering</h3>
+
+                <p>37 Killyleagh Road
+                    <br> Downpatrick
+                    <br> BT30 9BL
+                </p>
+
+                <p><a href="http://www.ivycatering.com" target="_blank">www.ivycatering.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">French Village</h3>
+
+                <p>Unit 32
+                    <br> Montgomery Road
+                    <br> Belfast
+                    <br> BT6 9HL
+                </p>
+
+                <p><a href="http://www.frenchvillagecatering.co.uk/" target="_blank">www.frenchvillagecatering.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Foodie Folk</h3>
+
+                <p>121 Gilnahirk Road
+                    <br> Belfast
+                    <br> BT5 7QL
+                </p>
+
+                <p><a href="http://www.foodiefolk.co.uk" target="_blank">www.foodiefolk.co.uk</a></p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">The Artisan Cookhouse</h3>
+                <p>4 Kildare Street
+                    <br> Strangford
+                    <br> BT30 7LJ
+                </p>
+                <p><a href="https://www.artisancookhouse.com/" target="_blank">www.artisancookhouse.com</a></p>
+            </div>
+
+            <div class="col-md-4">
                 <h3 class="raleway">The Gourmet Kitchen</h3>
                 <p><a href="http://www.thegourmetkitchen.ie/" target="_blank">www.thegourmetkitchen.ie</a></p>
-              </div>
-
-              <div class="col-md-4">
-                  <h3 class="raleway">The Edible Flower</h3>
-                  <p>121 Middle Road<br>
-                    Saintfield<br>
-                    BT24 7LS
-                  </p>
-                  <p><a href="https://theedibleflower.com/" target="_blank">www.theedibleflower.com</a></p>
             </div>
-              
-          </div>
 
-          <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">The Edible Flower</h3>
+                <p>121 Middle Road
+                    <br> Saintfield
+                    <br> BT24 7LS
+                </p>
+                <p><a href="https://theedibleflower.com/" target="_blank">www.theedibleflower.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
             <div class="col-md-4">
                 <h3 class="raleway">Table</h3>
                 <p><a href="https://www.tablefood.co.uk/" target="_blank">www.tablefood.co.uk</a></p>
             </div>
-    
-              <div class="col-md-4">
-                  <h3 class="raleway">NJB Corporate Services</h3>
-                  <p><a class="hvr-grow" href="#" data-toggle="modal" data-target="#foodModal">Brochure</a></p>
-              </div>
 
-              <div class="col-md-4">
+            <div class="col-md-4">
+                <h3 class="raleway">NJB Corporate Services</h3>
+                <p><a class="hvr-grow" href="#" data-toggle="modal" data-target="#foodModal">Brochure</a></p>
             </div>
-              
-          </div>
+
+            <div class="col-md-4">
+            </div>
+
         </div>
-      
-        <button class="accordion">Accomodation</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4">
-                  <h3 class="raleway">Slievemoyle Cottages</h3>
-      
-                  <p>54 Castleward Road  <br>
-                    Downpatrick<br>
-                    BT30 7JT
-                  </p>
-      
-                  <p><a href="http://www.slievemoylecottages.com" target="_blank">www.slievemoylecottages.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">The Old Rectory</h3>
-      
-                  <p>5 Shore Road<br>
-                    Strangford<br>
-                    BT30 7NL
-                  </p>
-      
-                  <p><a href="https://www.theoldrectorystrangford.com/" target="_blank">www.theoldrectorystrangford.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">25 Castle Street</h3>
-        
-                    <p>25 Castle Street<br>
-                        Strangford<br>
-                        BT30 7NF
-                    </p>
-        
-                    <p><a href="http://www.25castlestreet.com" target="_blank">www.25castlestreet.com</a></p>
-                  </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                    <h3 class="raleway">Margarets Cottage</h3>
-        
-                    <p>9 Castle Place<br>
-                      Ardglass <br>
-                      BT30 7TP
-                    </p>
-        
-                    <p><a href="http://www.margarets-cottage.co.uk" target="_blank">www.margarets-cottage.co.uk</a></p>
-                </div>
-      
-                <div class="col-md-4">
-                    <h3 class="raleway">The Cuan</h3>
-        
-                    <p>6-12 the Square<br>
-                      Strangford <br>
-                      BT30 7ND
-                    </p>
-        
-                    <p><a href="http://www.thecuan.com" target="_blank">www.thecuan.com</a></p>
-                </div>
-      
-                <div class="col-md-4">
-                    <h3 class="raleway">Hare Cottage</h3>
-        
-                    <p>26 Myra Road<br>
-                      Downpatrick <br>
-                      BT30 7JX                
-                    </p>
-        
-                    <p><a href="http://www.harecottagebedandbreakfast.co.uk/" target="_blank">www.harecottagebedandbreakfast.co.uk</a></p>
-                </div>
-            </div>
+    </div>
 
-            <div class="row">
-              <div class="col-md-4">
-                  <h3 class="raleway">Number 42 Strangford</h3>
-      
-                  <p>42 Downpatrick Road  <br>
-                    Strangford<br>
-                    BT30 7NA
-                  </p>
-      
-                  <p><a href="http://www.number42strangford.co.uk" target="_blank">www.number42strangford.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">The Castle Apartment</h3>
-      
-                  <p>15 Castle Street<br>
-                    Strangford<br>
-                    BT30 7NF
-                  </p>
-      
-                  <p><a href="https://www.booking.com/hotel/gb/the-castle-apartment.en-gb.html" target="_blank">Booking link</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                   <h3 class="raleway">Seal Cabin</h3>
-                    
-                    <p>53 Shore Road<br>
-                        Strangford<br>
-                        BT30 7NW
-                    </p>
-        
-                    <p><a href="https://www.facebook.com/Seal-Cabin-797238270385810/" target="_blank">Facebook Page</a></p>
-                  </div>
-            </div>
+    <button class="accordion">Accomodation</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Quarry Hill Church</h3>
 
-            <div class="row">
-              <div class="col-md-4">
-                  <h3 class="raleway">The Pharmacy Apartments</h3>
-      
-                  <p>2 Stella Maris St <br>
-                    Strangford<br>
-                    BT30 7NJ
-                  </p>
-      
-                  <p><a href="http://www.strangford-accommodation.co.uk/" target="_blank">www.strangford-accomodation.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Nutgrove House</h3>
-      
-                  <p>19 Nutgrove House<br>
-                    Downpatrick<br>
-                    BT30 8QN
-                  </p>
-      
-                  <p><a href="http://www.nutgrovehouse.com/" target="_blank">www.nutgrovehouse.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">Dunnanelly Country House</h3>
-        
-                    <p>26 Rocks Chapel Road<br>
-                        Crossgar<br>
-                        BT30 9BA
-                    </p>
-        
-                    <p><a href="http://www.dunnanellycountryhouse.com/" target="_blank">www.dunnanellycountryhouse.com</a></p>
-                  </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                  <h3 class="raleway">Carraig Dunsey House</h3>
-      
-                  <p>117A Shore Road <br>
-                    Kilclief<br>
-                    BT30 7NP<br>
-                    Lift to &amp; from wedding venue if required
-
-                  </p>
-      
-                  <p><a href="http://carraig-dunsey-house-bedbreakfast.business.site/ " target="_blank">Bed and Breakfast </a></p>
-                  <p><a href="http://carraig-dunsey-house-bb-and-dunsey-beag-self.business.site/" target="_blank">Self-Catering </a></p>
-                  
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="raleway">Quarry Hill Church</h3>
-        
-                    <p>56 Downpatrick Rd<br>
-                        Strangford<br>
-                        BT30 7LZ
-                    </p>
-        
-                    <p><a href="https://www.airbnb.co.uk/rooms/25432531?s=51" target="_blank">Airbnb link</a></p>
-                  
-                </div>  
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">The Red Door</h3>
-        
-                    <p>22 Downpatrick Rd<br>
-                        Strangford<br>
-                        BT30 7LZ
-                    </p>
-        
-                    <p><a href="https://www.airbnb.co.uk/rooms/14276405?s=51" target="_blank">Airbnb link</a></p>
-                </div>
-        
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <h3 class="raleway">Beach Cottage</h3>
-                  
-                <p>Shore Road <br>
-                   Kilclief
+                <p>56 Downpatrick Rd
+                    <br> Strangford
+                    <br> BT30 7LZ
                 </p>
-                <p>Get in touch with Julia<br>
-                (+44)7759869666 / julia01.livelife@gmail.com</p>
-              </div>
 
-              <div class="col-md-4">
-                  <h3 class="raleway">Pollensa B&amp;B</h3>
-                  
-                  <p>Quarry Hill Road, Strangford <br>
-                      3 Kingsize rooms<br>
-                      Lift to &amp; from wedding venue if required
-                  </p>
-      
-                  <p>Call Margot Irvine: (+44)7720050838</p>
-              </div>
-      
-              <div class="col-md-4">
+                <p><a href="https://www.airbnb.co.uk/rooms/25432531?s=51" target="_blank">Airbnb link</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Old Rectory</h3>
+
+                <p>5 Shore Road
+                    <br> Strangford
+                    <br> BT30 7NL
+                </p>
+
+                <p><a href="https://www.theoldrectorystrangford.com/" target="_blank">www.theoldrectorystrangford.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Slievemoyle Cottages</h3>
+
+                <p>54 Castleward Road
+                    <br> Downpatrick
+                    <br> BT30 7JT
+                </p>
+
+                <p><a href="http://www.slievemoylecottages.com" target="_blank">www.slievemoylecottages.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Margarets Cottage</h3>
+
+                <p>9 Castle Place
+                    <br> Ardglass
+                    <br> BT30 7TP
+                </p>
+
+                <p><a href="http://www.margarets-cottage.co.uk" target="_blank">www.margarets-cottage.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Cuan</h3>
+
+                <p>6-12 the Square
+                    <br> Strangford
+                    <br> BT30 7ND
+                </p>
+
+                <p><a href="http://www.thecuan.com" target="_blank">www.thecuan.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Hare Cottage</h3>
+
+                <p>26 Myra Road
+                    <br> Downpatrick
+                    <br> BT30 7JX
+                </p>
+
+                <p><a href="http://www.harecottagebedandbreakfast.co.uk/" target="_blank">www.harecottagebedandbreakfast.co.uk</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Number 42 Strangford</h3>
+
+                <p>42 Downpatrick Road
+                    <br> Strangford
+                    <br> BT30 7NA
+                </p>
+
+                <p><a href="http://www.number42strangford.co.uk" target="_blank">www.number42strangford.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Castle Apartment</h3>
+
+                <p>15 Castle Street
+                    <br> Strangford
+                    <br> BT30 7NF
+                </p>
+
+                <p><a href="https://www.booking.com/hotel/gb/the-castle-apartment.en-gb.html" target="_blank">Booking link</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Seal Cabin</h3>
+
+                <p>53 Shore Road
+                    <br> Strangford
+                    <br> BT30 7NW
+                </p>
+
+                <p><a href="https://www.facebook.com/Seal-Cabin-797238270385810/" target="_blank">Facebook Page</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">The Pharmacy Apartments</h3>
+
+                <p>2 Stella Maris St
+                    <br> Strangford
+                    <br> BT30 7NJ
+                </p>
+
+                <p><a href="http://www.strangford-accommodation.co.uk/" target="_blank">www.strangford-accomodation.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Nutgrove House</h3>
+
+                <p>19 Nutgrove House
+                    <br> Downpatrick
+                    <br> BT30 8QN
+                </p>
+
+                <p><a href="http://www.nutgrovehouse.com/" target="_blank">www.nutgrovehouse.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Dunnanelly Country House</h3>
+
+                <p>26 Rocks Chapel Road
+                    <br> Crossgar
+                    <br> BT30 9BA
+                </p>
+
+                <p><a href="http://www.dunnanellycountryhouse.com/" target="_blank">www.dunnanellycountryhouse.com</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Carraig Dunsey House</h3>
+
+                <p>117A Shore Road
+                    <br> Kilclief
+                    <br> BT30 7NP
+                    <br> Lift to &amp; from wedding venue if required
+
+                </p>
+
+                <p><a href="http://carraig-dunsey-house-bedbreakfast.business.site/ " target="_blank">Bed and Breakfast </a></p>
+                <p><a href="http://carraig-dunsey-house-bb-and-dunsey-beag-self.business.site/" target="_blank">Self-Catering </a></p>
+
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">25 Castle Street</h3>
+
+                <p>25 Castle Street
+                    <br> Strangford
+                    <br> BT30 7NF
+                </p>
+
+                <p><a href="http://www.25castlestreet.com" target="_blank">www.25castlestreet.com</a></p>
+
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Red Door</h3>
+
+                <p>22 Downpatrick Rd
+                    <br> Strangford
+                    <br> BT30 7LZ
+                </p>
+
+                <p><a href="https://www.airbnb.co.uk/rooms/14276405?s=51" target="_blank">Airbnb link</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Beach Cottage</h3>
+
+                <p>Shore Road
+                    <br> Kilclief
+                </p>
+                <p>Get in touch with Julia
+                    <br> (+44)7759869666 / julia01.livelife@gmail.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Pollensa B&amp;B</h3>
+
+                <p>Quarry Hill Road, Strangford
+                    <br> 3 Kingsize rooms
+                    <br> Lift to &amp; from wedding venue if required
+                </p>
+
+                <p>Call Margot Irvine: (+44)7720050838</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Demense B&B</h3>
+
+                <p>5 Demense Link
+                    <br> Downpatrick
+                    <br> BT30 6UW
+                </p>
+
+                <p><a href="https://www.booking.com/hotel/gb/demense-b-amp-b-downpatrick.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaGmIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgO4AtO7n_MFwAIB;sid=beab1ab3638331a9ec7857aa5d6411a2;dest_id=-2594587;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1583865338;srpvid=eb4882bca16200cc;type=total;ucfs=1&#hotelTmpl" target="_blank">Booking.com link</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
                 <h3 class="raleway">Further Links</h3>
                 <p><a href="https://www.airbnb.co.uk/s/Strangford--United-Kingdom/homes" target="_blank">AirBnb</a></p>
                 <p><a href="https://www.booking.com/accommodation/city/gb/strangford.en-gb.html?aid=373411;label=strangford-v3Y7FkzfmOJOdBm0tQ_WVgS41654150165%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-146342138710%3Akwd-18415754152%3Alp9047020%3Ali%3Adec%3Adm;sid=4ca5e6005decd84850c52e6750529d85;keep_landing=1&gclid=Cj0KCQjw0K7NBRC7ARIsAEaqLRG3HXOyrWRU8pwrAnZalVm0TtFOu1CwkxWouIu5Z10gBVyElYwWAgEaAiUUEALw_wcB&" target="_blank">Booking.com</a></p>
                 <p><a href="https://www.discovernorthernireland.com/accommodation/accommodation/" target="_blank">Discover Northern Ireland</a></p>
-              </div>
-      
             </div>
 
-
-          </div>
-      
-        <button class="accordion">Photography</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Wild Daisy Art Photography</h3>
-      
-                  <p>By Gundega Roge
-                  </p>
-      
-                  <p><a href="http://www.wilddaisyartphoto.com" target="_blank">www.wilddaisyartphoto.com</a></p>
-                  <p><a href="http://www.gundegasphotography.com" target="_blank">www.gundegasphotography.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Kat Mervyn Photography</h3>
-      
-                  <p><a href="https://www.katmervynphotography.com" target="_blank">www.katmervynphotography.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">Mark Barton Photography</h3>
-        
-                    <p><a href="http://www.markbartonphotography.com" target="_blank">www.markbartonphotography.com</a></p>
-                  </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                    <h3 class="raleway">Lynn Stanfield Photography</h3>
-        
-                    <p><a href="http://www.lynnstanfield.com" target="_blank">www.lynnstanfield.com</a></p>
-                </div>
-      
-                <div class="col-md-4">
-                    <h3 class="raleway">Gather and Tides</h3>
-        
-        
-                    <p><a href="http://www.gatherandtides.com" target="_blank">www.gatherandtides.com</a></p>
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="raleway">Paula Gillespie</h3>
-        
-        
-                    <p><a href="http://paulagillespie.com/" target="_blank">www.paulagillespie.com</a></p>
-                </div>
-                
+            <div class="col-md-4">
             </div>
 
-            <div class="row">
-              <div class="col-md-4">
-                    <h3 class="raleway">NavyBlur</h3>
-        
-                    <p><a href="http://navyblur.co.uk/" target="_blank">www.navyblur.co.uk</a></p>
-                </div>
-      
-                <div class="col-md-4">
-                    <h3 class="raleway">Des Rowan</h3>
-        
-        
-                    <p><a href="http://www.desrowan.com/" target="_blank">www.desrowan.com</a></p>
-                </div>
+        </div>
 
-                <div class="col-md-4">
-                  <h3 class="raleway">One Fine Day</h3>
-        
-        
-                  <p><a href="https://www.onefinedayphoto.co.uk/" target="_blank">www.onefinedayphoto.co.uk</a></p>
-                </div>
-                
+    </div>
+
+    <button class="accordion">The Boathouse</button>
+    <div class="panel">
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+                <p>One night stay in the boathouse is included in the price of the hire of the venue.
+                    <br> It is also available to rent at other times by arrangement
+                    <br> Please email <a href="mailto:sian@oldcourtweddingcompany.com"> sian@oldcourtweddingcompany.com</a> for further info.</p>
             </div>
 
+        </div>
+    </div>
 
-            <div class="row">
-              <div class="col-md-4">
+    <button class="accordion">Photography</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Wild Daisy Art Photography</h3>
+
+                <p>By Gundega Roge
+                </p>
+
+                <p><a href="http://www.wilddaisyartphoto.com" target="_blank">www.wilddaisyartphoto.com</a></p>
+                <p><a href="http://www.gundegasphotography.com" target="_blank">www.gundegasphotography.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Kat Mervyn Photography</h3>
+
+                <p><a href="https://www.katmervynphotography.com" target="_blank">www.katmervynphotography.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Mark Barton Photography</h3>
+
+                <p><a href="http://www.markbartonphotography.com" target="_blank">www.markbartonphotography.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Lynn Stanfield Photography</h3>
+
+                <p><a href="http://www.lynnstanfield.com" target="_blank">www.lynnstanfield.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Gather and Tides</h3>
+
+                <p><a href="http://www.gatherandtides.com" target="_blank">www.gatherandtides.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Paula Gillespie</h3>
+
+                <p><a href="http://paulagillespie.com/" target="_blank">www.paulagillespie.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">NavyBlur</h3>
+
+                <p><a href="http://navyblur.co.uk/" target="_blank">www.navyblur.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Des Rowan</h3>
+
+                <p><a href="http://www.desrowan.com/" target="_blank">www.desrowan.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">One Fine Day</h3>
+
+                <p><a href="https://www.onefinedayphoto.co.uk/" target="_blank">www.onefinedayphoto.co.uk</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
                 <h3 class="raleway">Chris Copeland</h3>
                 <p><a href="https://www.chriscopelandphotography.co.uk/" target="_blank">www.chriscopelandphotography.co.uk</a></p>
-              </div>
-      
-              <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
                 <h3 class="raleway">Collette Creative</h3>
                 <p><a href="http://www.collettecreative.com/" target="_blank">www.collettecreative.com</a></p>
-              </div>
+            </div>
 
-              <div class="col-md-4">
+            <div class="col-md-4">
                 <h3 class="raleway">Jonathan Ryder</h3>
                 <p><a href="https://jonathanryderphotography.com/" target="_blank">www.jonathanryderphotography.com</a></p>
-              </div>
             </div>
+        </div>
 
-            <div class="row">
-              <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-4">
                 <h3 class="raleway">This Modern Love</h3>
                 <p><a href="https://www.thismodernlove.co.uk/" target="_blank">www.thismodernlove.co.uk</a></p>
-              </div>
-      
-              <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
                 <h3 class="raleway">The Hunter Bros</h3>
                 <p><a href="https://www.thehunterbros.com/" target="_blank">www.thehunterbros.com</a></p>
-              </div>
-
-              <div class="col-md-4">
-                <h3 class="raleway"></h3>
-                <p><a href="" target="_blank"></a></p>
-              </div>
             </div>
 
-          </div>
-      
-        <button class="accordion">Videography</button>
-        <div class="panel">
-            <div class="row">
-                
-              <div class="col-md-4">
-                    
-                </div>
-                
-                <div class="col-md-4">
-                  <h3 class="raleway">Take Two Studio</h3>
-                  <p><a href="http://www.taketwostudio.com/" target="_blank">www.taketwostudio.com</a></p>
-                </div>
-    
-                <div class="col-md-4">
-      
-                </div>
+            <div class="col-md-4">
+                <h3 class="raleway"></h3>
+                <p>
+                    <a href="" target="_blank"></a>
+                </p>
             </div>
         </div>
 
+    </div>
 
-        <button class="accordion">Music</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Bespoke Music Solutions</h3>
-      
-                  <p><a href="http://www.bespokemusicsolutions.co.uk" target="_blank">www.bespokemusicsolutions.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Ruth Corry Harpist</h3>
-      
-                  <p><a href="http://www.ruthcorryharpist.co.uk" target="_blank">www.ruthcorryharpist.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">The Just Adam Band</h3>
-      
-                    <p><a href="http://www.thejustadamband.com/" target="_blank">www.thejustadamband.com</a></p>
+    <button class="accordion">Videography</button>
+    <div class="panel">
+        <div class="row">
 
-                  </div>
+            <div class="col-md-4">
+
             </div>
 
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Jill Hawthorne Pianist</h3>
-      
-                  <p><a href="http://jillhawthornepianist.com/" target="_blank">www.jillhawthornepianist.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Green Means Go</h3>
-      
-                  <p><a href="http://www.greenmeansgoband.com/" target="_blank">www.greenmeansgoband.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">McStay Sisters</h3>
-
-                    <p>Vocalists/Musicians <br>
-                    Contact: (+44)7746363551</p>
-
-                  </div>
+            <div class="col-md-4">
+                <h3 class="raleway">Take Two Studio</h3>
+                <p><a href="http://www.taketwostudio.com/" target="_blank">www.taketwostudio.com</a></p>
             </div>
 
-            <div class="row">
-              <div class="col-md-4"> 
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <button class="accordion">Music</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Bespoke Music Solutions</h3>
+
+                <p><a href="http://www.bespokemusicsolutions.co.uk" target="_blank">www.bespokemusicsolutions.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Ruth Corry Harpist</h3>
+
+                <p><a href="http://www.ruthcorryharpist.co.uk" target="_blank">www.ruthcorryharpist.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Just Adam Band</h3>
+
+                <p><a href="http://www.thejustadamband.com/" target="_blank">www.thejustadamband.com</a></p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Jill Hawthorne Pianist</h3>
+
+                <p><a href="http://jillhawthornepianist.com/" target="_blank">www.jillhawthornepianist.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Green Means Go</h3>
+
+                <p><a href="http://www.greenmeansgoband.com/" target="_blank">www.greenmeansgoband.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">McStay Sisters</h3>
+
+                <p>Vocalists/Musicians
+                    <br> Contact: (+44)7746363551</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
                 <h3 class="raleway">Cathedral Quarter</h3>
 
-                <p>Classical, Irish, Flamenco, Blues <br>
-                Contact Aiden: (+44)7730942444</p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">McStocker Ceili Band</h3>
-                  <p><a href="http://www.ceiliband.co.uk/" target="_blank">www.ceiliband.co.uk</a></p>
-
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Swing Gals</h3>
-                  <p><a href="https://www.facebook.com/swinggals/" target="_blank">Facebook link</a></p>
-                  </div>
+                <p>Classical, Irish, Flamenco, Blues
+                    <br> Contact Aiden: (+44)7730942444</p>
             </div>
 
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Marion Jordan</h3>
-                  <p><a href="http://www.marionjordan.com/" target="_blank">www.marionjordan.com</a></p>
-              </div>
-        
-              <div class="col-md-4">
-                  <h3 class="raleway">The Rare Aul Stuff</h3>
-                  <p><a href="https://www.therareaulstuff.com/" target="_blank">www.therareaulstuff.com</a></p>
-              </div>
-        
-              <div class="col-md-4">
-                  <h3 class="raleway">Jim Sisk & Niamh Kavanagh</h3>
-                  <p>Keyboard player / Vocalist <br />
-                  07484606695 / muenthe@hotmail.com</p>
-              </div>
+            <div class="col-md-4">
+                <h3 class="raleway">McStocker Ceili Band</h3>
+                <p><a href="http://www.ceiliband.co.uk/" target="_blank">www.ceiliband.co.uk</a></p>
+
             </div>
 
-            <div class="row">
-              <div class="col-md-4"> 
-              </div>
-        
-              <div class="col-md-4">
-                  <h3 class="raleway">DJ Paul McKenna</h3>
-                  <p><a href="https://djpaulmckenna.com/" target="_blank">www.djpaulmckenna.com</a></p>
-              </div>
-        
-              <div class="col-md-4">
-              </div>
-            </div>
-            
-        </div>
-      
-        <button class="accordion">Flowers &amp; Decoration</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4">
-                  <h3 class="raleway">The Flower Room</h3>
-      
-                  <p><a href="http://www.theflowerroomni.co.uk/" target="_blank">www.theflowerroomni.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">House of Elliot Flowers</h3>
-      
-                  <p><a href="https://houseofelliottflowers.co.uk/" target="_blank">www.houseofelliottflowers.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">Floral Earth</h3>
-      
-                    <p><a href="http://floralearth.co.uk/" target="_blank">www.floralearth.co.uk</a></p>
-
-                  </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Petals &amp; Pots</h3>
-      
-                  <p><a href="http://www.petalsandpots.co.uk/" target="_blank">www.petalsandpots.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Wooden Treats</h3>
-      
-                  <p><a href="https://www.woodentreatsweddings.co.uk/" target="_blank">www.woodentreatsweddings.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Elite Events NI</h3>
-      
-                  <p><a href="https://www.eliteeventsni.com/" target="_blank">www.eliteeventsni.com</a></p>
-                  </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">Flowers by mee</h3>
-                  <p><a href="https://www.flowersbymee.com/" target="_blank">www.flowersbymee.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Wedding Flowers Belfast</h3>
-                  <p><a href="https://www.facebook.com/weddingflowersbelfast/" target="_blank">Facebook link</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  </div>
+            <div class="col-md-4">
+                <h3 class="raleway">Swing Gals</h3>
+                <p><a href="https://www.facebook.com/swinggals/" target="_blank">Facebook link</a></p>
             </div>
         </div>
-      
-        <button class="accordion">Event Planning</button>
-        <div class="panel">
-            <div class="row">
-      
-              <div class="col-md-4">
-                    
-                </div>
-      
-                <div class="col-md-4"> 
-                  <h3 class="raleway">Blue Moon Event Design</h3>
-      
-                  <p>Unit 3</br>
-                    Down Business Centre </br>
-                    46 Belfast Road </br>
-                    Downpatrick</br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Marion Jordan</h3>
+                <p><a href="http://www.marionjordan.com/" target="_blank">www.marionjordan.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Rare Aul Stuff</h3>
+                <p><a href="https://www.therareaulstuff.com/" target="_blank">www.therareaulstuff.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Jim Sisk & Niamh Kavanagh</h3>
+                <p>Keyboard player / Vocalist
+                    <br /> 07484606695 / muenthe@hotmail.com</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">DJ Paul McKenna</h3>
+                <p><a href="https://djpaulmckenna.com/" target="_blank">www.djpaulmckenna.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+        </div>
+
+    </div>
+
+    <button class="accordion">Flowers &amp; Decoration</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">The Flower Room</h3>
+
+                <p><a href="http://www.theflowerroomni.co.uk/" target="_blank">www.theflowerroomni.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">House of Elliot Flowers</h3>
+
+                <p><a href="https://houseofelliottflowers.co.uk/" target="_blank">www.houseofelliottflowers.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Floral Earth</h3>
+
+                <p><a href="http://floralearth.co.uk/" target="_blank">www.floralearth.co.uk</a></p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Petals &amp; Pots</h3>
+
+                <p><a href="http://www.petalsandpots.co.uk/" target="_blank">www.petalsandpots.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Wooden Treats</h3>
+
+                <p><a href="https://www.woodentreatsweddings.co.uk/" target="_blank">www.woodentreatsweddings.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Elite Events NI</h3>
+
+                <p><a href="https://www.eliteeventsni.com/" target="_blank">www.eliteeventsni.com</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Flowers by mee</h3>
+                <p><a href="https://www.flowersbymee.com/" target="_blank">www.flowersbymee.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Wedding Flowers Belfast</h3>
+                <p><a href="https://www.facebook.com/weddingflowersbelfast/" target="_blank">Facebook link</a></p>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+
+    <button class="accordion">Event Planning</button>
+    <div class="panel">
+        <div class="row">
+
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Blue Moon Event Design</h3>
+
+                <p>Unit 3<br>
+                    Down Business Centre <br>
+                    46 Belfast Road <br>
+                    Downpatrick<br>
                     BT30 9UP
-      
-                  </p>
-      
-                  <p><a href="http://www.bluemooneventdesign.com" target="_blank">www.bluemooneventdesign.com</a></p>
-                </div>
-      
-        
-                <div class="col-md-4">
-      
-                  </div>
-            </div>
-        </div>
-        
-        <button class="accordion">Celebrants</button>
-        <div class="panel">
-            <div class="row">
-      
-              <div class="col-md-4">
-                  <h3 class="raleway">NI wedding celebrant</h3>
-      
-                  <p><a href="https://niweddingcelebrant.com/" target="_blank">www.niweddingcelebrant.com</a></p>
-                </div>
-      
-                <div class="col-md-4"> 
-                  <h3 class="raleway">Perfect Day Ceremonies by Fiona</h3>
-      
-                  <p><a href="https://www.perfectdayceremoniesbyfiona.com/" target="_blank">www.perfectdayceremoniesbyfiona.com</a></p>
-                </div>
-      
-        
-                <div class="col-md-4">
-      
-                  </div>
-            </div>
-        </div>
-      
-        <button class="accordion">Fascinators &amp; Hats</button>
-        <div class="panel">
-            <div class="row">
-                
-              <div class="col-md-4">
-                    
-                </div>
-                
-                <div class="col-md-4">
-                  <h3 class="raleway">Marie-Claire Millinery</h3>
-      
-      
-                  <p><a href="http://www.marie-clairemillinery.co.uk" target="_blank">www.marie-clairemillinery.co.uk</a></p>
-                </div>
-      
-        
-                <div class="col-md-4">
-      
-                </div>
-            </div>
-        </div>
-      
-        <button id="#alcohol_info" class="accordion">Alcohol</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4"> 
-                  <h3 class="raleway">James Nicholson Wines</h3>
-      
-                  <p>7/9 Killyleagh Street  <br>
-                    Crossgar<br>
-                    BT30 9DQ
-                  </p>
-      
-                  <p><a href="http://www.jnwine.com" target="_blank">www.jnwine.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Harland Wines</h3>
-      
-                  <p>65b High Street<br>
-                    Hollywood<br>
-                    BT18 9AQ
-                  </p>
-      
-                  <p><a href="http://www.harlandwines.com" target="_blank">www.harlandwines.com</a></p>
-                </div>
-                
-                <div class="col-md-4">
-                  <h3 class="raleway">NJB full bar service</h3>
-                  <p><a class="hvr-grow" href="#" data-toggle="modal" data-target="#barModal">Brochure</a></p>
-                </div>
 
+                </p>
+
+                <p><a href="http://www.bluemooneventdesign.com" target="_blank">www.bluemooneventdesign.com</a></p>
             </div>
-              <div class="row">
-              <div class="col-md-4"> 
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Denvirs Downpatrick bar facility</h3>
-      
-                  <p>02890509720 / 07919597002<br>
-                    stephenmagorrian@thehoratiogroup.com<br>
-                  </p>
-                </div>
-                
-                <div class="col-md-4">
-                </div>
+
+            <div class="col-md-4">
 
             </div>
         </div>
+    </div>
 
+    <button class="accordion">Celebrants</button>
+    <div class="panel">
+        <div class="row">
 
-        <button class="accordion">Transport</button>
-        <div class="panel">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="col-md-4">
+                <h3 class="raleway">NI wedding celebrant</h3>
+
+                <p><a href="https://niweddingcelebrant.com/" target="_blank">www.niweddingcelebrant.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Perfect Day Ceremonies by Fiona</h3>
+
+                <p><a href="https://www.perfectdayceremoniesbyfiona.com/" target="_blank">www.perfectdayceremoniesbyfiona.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <button class="accordion">Fascinators &amp; Hats</button>
+    <div class="panel">
+        <div class="row">
+
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Marie-Claire Millinery</h3>
+
+                <p><a href="http://www.marie-clairemillinery.co.uk" target="_blank">www.marie-clairemillinery.co.uk</a></p>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <button id="#alcohol_info" class="accordion">Alcohol</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">James Nicholson Wines</h3>
+
+                <p>7/9 Killyleagh Street
+                    <br> Crossgar
+                    <br> BT30 9DQ
+                </p>
+
+                <p><a href="http://www.jnwine.com" target="_blank">www.jnwine.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Harland Wines</h3>
+
+                <p>65b High Street
+                    <br> Hollywood
+                    <br> BT18 9AQ
+                </p>
+
+                <p><a href="http://www.harlandwines.com" target="_blank">www.harlandwines.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">NJB full bar service</h3>
+                <p><a class="hvr-grow" href="#" data-toggle="modal" data-target="#barModal">Brochure</a></p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Denvirs Downpatrick bar facility</h3>
+
+                <p>02890509720 / 07919597002
+                    <br> stephenmagorrian@thehoratiogroup.com
+                    <br>
+                </p>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+
+        </div>
+    </div>
+
+    <button class="accordion">Transport</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
                 <h3 class="raleway">Newcastle Coach Hire</h3>
-                    
+
                 <p><a href="http://newcastlecoachhiren-ireland.co.uk/" target="_blank">Website</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Downpatrick Taxis</h3>
-                    
-                  <p>(+44)28614515 / (+44)28612958</p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Strangford Taxis</h3>
-                    
-                  <p>(+44)7743693837</p>
-                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Downpatrick Taxis</h3>
+
+                <p>(+44)28614515 / (+44)28612958</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Strangford Taxis</h3>
+
+                <p>(+44)7743693837</p>
             </div>
         </div>
+    </div>
 
-        <button class="accordion">Extras</button>
-        <div class="panel">
-            <div class="row">
-                <div class="col-md-4"> 
-                  <h3 class="raleway">Emerald Fireworks</h3>
+    <button class="accordion">Extras</button>
+    <div class="panel">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="raleway">Emerald Fireworks</h3>
 
-                  <p><a href="http://www.emeraldfireworks.co.uk/" target="_blank">www.emeraldfireworks.co.uk</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                    <h3 class="raleway">The Fancy Fox</h3>
-                    
-                    <p><a href="http://www.thefancyfoxni.com/" target="_blank">www.thefancyfoxni.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Favour Soap Bags</h3>
-                    
-                  <p><a href="https://www.favoursoapbags.co.uk/" target="_blank">www.favoursoapbags.co.uk</a></p>
-             
-                </div>
+                <p><a href="http://www.emeraldfireworks.co.uk/" target="_blank">www.emeraldfireworks.co.uk</a></p>
             </div>
-            <div class="row">
-                <div class="col-md-4"> 
-                </div>
-        
-                <div class="col-md-4">
-                  <h3 class="raleway">Elite Events NI</h3>
-      
-                  <p><a href="https://www.eliteeventsni.com/" target="_blank">www.eliteeventsni.com</a></p>
-                </div>
-        
-                <div class="col-md-4">
-            
-                </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">The Fancy Fox</h3>
+
+                <p><a href="http://www.thefancyfoxni.com/" target="_blank">www.thefancyfoxni.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="raleway">Favour Soap Bags</h3>
+
+                <p><a href="https://www.favoursoapbags.co.uk/" target="_blank">www.favoursoapbags.co.uk</a></p>
+
             </div>
         </div>
-      </div>
-      
+        <div class="row">
+            <div class="col-md-4">
+            </div>
 
+            <div class="col-md-4">
+                <h3 class="raleway">Elite Events NI</h3>
 
+                <p><a href="https://www.eliteeventsni.com/" target="_blank">www.eliteeventsni.com</a></p>
+            </div>
 
+            <div class="col-md-4">
 
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
